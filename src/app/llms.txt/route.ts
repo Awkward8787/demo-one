@@ -1,0 +1,7 @@
+export const dynamic = "force-static";
+
+export function GET() {
+  return new Response("# Welcome Home - Elevation Church\n\nFind the right experience for you at Elevation Church. Grow in your faith, connect with others, and discover your calling – whether online or in person.\n\nThis is a generated ditto.site clone. It preserves captured page content, metadata, route structure, and static assets where available.\n\n## Routes\n\n- [Welcome Home - Elevation Church](https://www.elevationchurch.org/) - Find the right experience for you at Elevation Church. Grow in your faith, connect with others, and discover your calling – whether online or in person.\n\n## Captured Content\n\n### Welcome Home - Elevation Church\nSkip to main content Skip to main nav ​ Give Groups Serve Events About Sermons Streaming Locations Giving Groups Events Welcome to Elevation Church See what God can do through you. Get connected Learn more Get connected Learn more Find the right experience for you. No matter where you are, online or in person, become a part of all God is doing. Physical Campus Worship with us in person at one of our physical campuses. Find a location Live Streams eFam is our online community who stream church from wherever they are. Find a time Watch Party Watch Parties are groups of eFam that stream the worship experience together. Find a watch party Pop-Up A Pop-Up is where we bring church to different cit\n", {
+    headers: { "content-type": "text/plain; charset=utf-8" },
+  });
+}

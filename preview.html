@@ -1,0 +1,2780 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome Home - Elevation Church</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid currentColor; }
+html { -webkit-text-size-adjust: 100%; line-height: normal; }
+body { margin: 0; }
+ul, ol, menu { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea, optgroup { font: inherit; color: inherit; background: transparent; border: 0; padding: 0; margin: 0; text-align: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+table { border-collapse: separate; border-spacing: 0; }
+img, picture, video, canvas, svg { display: inline-block; }
+/* Lottie runtime fit: the player re-mounts its svg/canvas into an absolute overlay that fills
+   the host's captured (per-viewport, definite) box. Force that runtime media to fit the box so
+   an aspect-mismatched viewBox (e.g. a portrait animation in a shorter, letterboxed source box)
+   can't inflate past the pinned height. Scoped to the runtime-marked host only. */
+[data-ditto-lottie] > div > svg, [data-ditto-lottie] > div > canvas { width: 100%; height: 100%; display: block; }
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+/* Neutralize UA text defaults to inherit so the generator's default-skipping is
+   correct: a property equal to its inherited value is simply not emitted. */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+b, strong, th { font-weight: inherit; }
+em, i, cite, var, dfn, address, q { font-style: inherit; }
+small, big, sub, sup { font-size: inherit; }
+sub, sup { vertical-align: inherit; }
+code, kbd, samp, pre, tt, var { font-family: inherit; font-size: inherit; }
+mark { background-color: transparent; color: inherit; }
+abbr[title] { text-decoration: none; }
+fieldset, legend { min-width: 0; }
+
+/* fonts */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/7e1646ec4eae.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8c4de3c7eb48.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/38f151be0445.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/3523b1b335d1.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/531753a3ea99.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a9812b17178a.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/b10d6d2d40de.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/8fccff046e6c.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/09e930ab37b1.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/584c88e64208.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d1b985bf83f7.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/92487a33db5f.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f833e71b99b6.woff2") format("woff2");
+  unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6767a97b6d43.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a000e0ed4625.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ed510171e754.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/584c88e64208.woff2") format("woff2");
+  unicode-range: u+0460-052f,u+1c80-1c8a,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/d1b985bf83f7.woff2") format("woff2");
+  unicode-range: u+0301,u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/92487a33db5f.woff2") format("woff2");
+  unicode-range: u+1f??;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/f833e71b99b6.woff2") format("woff2");
+  unicode-range: u+0370-0377,u+037a-037f,u+0384-038a,u+038c,u+038e-03a1,u+03a3-03ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/6767a97b6d43.woff2") format("woff2");
+  unicode-range: u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+0300-0301,u+0303-0304,u+0308-0309,u+0323,u+0329,u+1ea0-1ef9,u+20ab;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/a000e0ed4625.woff2") format("woff2");
+  unicode-range: u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/ed510171e754.woff2") format("woff2");
+  unicode-range: u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd;
+}
+
+@font-face {
+  font-family: "slick";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("public/assets/cloned/fonts/753d042ba9ad.woff") format("woff"), url("public/assets/cloned/fonts/46ea5b7a6335.ttf") format("truetype");
+}
+
+/* tokens */
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgba(0, 0, 0, 0.87);
+  --border: rgb(117, 117, 117);
+  --color-001: rgb(0, 0, 0);
+  --color-002: rgba(0, 0, 0, 0.6);
+  --color-003: rgba(255, 255, 255, 0.7);
+  --color-004: rgb(66, 66, 66);
+  --color-005: rgba(0, 0, 0, 0.54);
+  --color-006: rgb(26, 26, 26);
+}
+
+:root {
+  /* fonts */
+  --font-body: "DM Sans", "DM Sans Fallback";
+  --font-001: Arial;
+  /* fontSizes */
+  --font-size-001: 14px;
+  --font-size-002: 16px;
+  --font-size-003: 20px;
+  --font-size-004: 21.0528px;
+  --font-size-005: 22px;
+  --font-size-006: 23.9888px;
+  --font-size-007: 24px;
+  --font-size-008: 32.3888px;
+  --font-size-009: 35px;
+  --font-size-010: 47.9856px;
+  /* fontWeights */
+  --font-weight-001: 400;
+  --font-weight-002: 700;
+  /* lineHeights */
+  --line-height-001: 24px;
+  --line-height-002: 28px;
+  --line-height-003: 40.0002px;
+  --line-height-004: 32.0011px;
+  --line-height-005: 23px;
+  --line-height-006: 28.0002px;
+  --line-height-007: 52.5px;
+  --line-height-008: 55.9992px;
+  --line-height-009: 26.68px;
+  /* spacing */
+  --space-001: 6px;
+  --space-002: 8px;
+  --space-003: 11px;
+  --space-004: 16px;
+  --space-005: 24px;
+  --space-006: 48px;
+  --space-007: 66px;
+  --space-008: 80px;
+  /* radii */
+  --radius-001: 6px;
+  --radius-002: 12px;
+  --radius-003: 16px;
+  --radius-004: 50%;
+  /* shadows */
+  --shadow-001: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  --shadow-002: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  /* zIndices */
+  --z-001: 9;
+  --z-002: 10;
+  --z-003: 20;
+  --z-004: 30;
+  /* breakpoints */
+  --bp-375: 375px;
+  --bp-768: 768px;
+  --bp-1280: 1280px;
+  --bp-1920: 1920px;
+}
+
+
+/* page base */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+html, body { overflow-x: clip; }
+
+/* nodes */
+@-webkit-keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+
+.cn0{height:4355.19px;display:block;overflow-x:hidden;overflow-y:auto;color:var(--foreground);font-family:var(--font-body);font-size:var(--font-size-002);font-weight:var(--font-weight-001);font-style:normal;line-height:var(--line-height-001);letter-spacing:0.15008px;word-spacing:0px;text-align:start;text-transform:none;white-space:normal;word-break:normal;overflow-wrap:normal;text-indent:0px;text-shadow:none;font-variant-caps:normal;font-feature-settings:normal;list-style-position:outside;writing-mode:horizontal-tb;direction:ltr;background-color:var(--background)}
+.cn1{height:80px;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0.12);display:block;position:sticky;top:0px;z-index:50;background-color:var(--background)}
+.cn2{width:188.016px;height:56px;display:block;position:absolute;top:-999px;left:-999px;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);color:var(--color-001);background-color:var(--background);cursor:pointer}
+.cn3{width:153.406px;height:56px;display:block;position:absolute;top:-999px;left:-999px;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);color:var(--color-001);background-color:var(--background);cursor:pointer}
+.cn4{display:flex;flex-direction:column;flex-shrink:0;color:var(--background)}
+.cn5{width:100%;height:80px;min-height:64px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:1705px;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);justify-content:space-between;align-items:center;margin-left:auto;margin-right:auto}
+.cn6{display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn7{height:40px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-left:-12px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;color:var(--border);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;cursor:pointer}
+.cn8{width:auto;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn9{height:32px;display:block;cursor:pointer}
+.cn10{width:128px;height:32px;display:block;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 128 / 32;color:rgba(0, 0, 0, 0)}
+.cn11{width:32px;height:32px;display:none;overflow-x:clip;overflow-y:clip;aspect-ratio:auto 32 / 32;color:rgba(0, 0, 0, 0)}
+.cn12{width:100%;display:block;max-width:444px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn13{display:block}
+.cn14{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;background-color:var(--background)}
+.cn15{width:100%;height:40px;border-width:1px;border-style:solid;border-color:var(--border);display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-right:var(--space-002);padding-left:var(--space-002);border-top-left-radius:36px;border-top-right-radius:36px;border-bottom-right-radius:36px;border-bottom-left-radius:36px;align-items:center;color:var(--color-005);line-height:var(--line-height-005);cursor:text}
+.cn16{display:flex;max-height:32px;margin-right:var(--space-002);align-items:center;white-space:nowrap;text-wrap:nowrap}
+.cn17{width:0px;display:block}
+.cn18{width:auto;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007)}
+.cn19{box-sizing:content-box;width:362px;height:23px;display:block;min-width:0px;padding-top:4px;padding-bottom:5px;overflow-x:clip;overflow-y:clip;line-height:16px;letter-spacing:0.15px;animation-name:mui-auto-fill-cancel;animation-duration:0.01s}
+.cn19::placeholder{color:rgba(0, 0, 0, 0.54)}
+.cn20{width:24px;height:24px;display:none;position:relative;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;color:var(--color-005);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;cursor:pointer}
+.cn21{width:24px;height:24px;display:inline-block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn22{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px}
+.cn23{display:flex;align-items:center;row-gap:var(--space-005);column-gap:var(--space-005)}
+.cn24{height:24px;display:block;cursor:pointer}
+.cn25{display:block;color:var(--foreground)}
+.cn26{height:24px;display:block;cursor:pointer}
+.cn27{display:block;color:var(--foreground)}
+.cn28{height:24px;display:block;cursor:pointer}
+.cn29{display:block;color:var(--foreground)}
+.cn30{height:24px;display:block;cursor:pointer}
+.cn31{display:block;color:var(--foreground)}
+.cn32{height:24px;display:block;cursor:pointer}
+.cn33{display:block;color:var(--foreground)}
+.cn34{display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn35{flex-basis:100%;flex-shrink:0;height:48px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-005);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;cursor:pointer}
+.cn36{width:32px;height:32px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--background);font-family:var(--font-body);font-size:var(--font-size-003);line-height:20px;letter-spacing:0.14px;background-color:var(--border)}
+.cn37{width:auto;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007)}
+.cn38{display:none;min-width:0px;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn39{flex-basis:100%;flex-shrink:0;display:inline-flex;position:relative;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-005);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;cursor:pointer}
+.cn40{width:32px;height:32px;display:flex;position:relative;min-width:0px;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--background);font-family:var(--font-body);font-size:var(--font-size-003);line-height:20px;letter-spacing:0.14px;background-color:var(--border)}
+.cn41{width:auto;height:75%;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007)}
+.cn42{display:block}
+.cn43{width:20px;height:100%;display:block;position:fixed;top:0px;z-index:1199}
+.cn44{display:block}
+.cn45{display:block}
+.cn46{width:100%;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgba(0, 0, 0, 0.12);display:none;position:sticky;top:74px;background-color:var(--background)}
+.cn47{display:block;position:relative;padding-top:var(--space-004);padding-bottom:var(--space-004);overflow-x:hidden;overflow-y:hidden}
+.cn48{width:80px;height:100%;display:block;position:absolute;top:0px;right:0px;z-index:var(--z-002);background-image:linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0));pointer-events:none}
+.cn49{display:block;position:relative}
+.cn50{display:block;overflow-x:hidden;overflow-y:hidden}
+.cn51{display:flex}
+.cn52{display:block;min-width:0px;max-width:fit-content}
+.cn53{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn54{display:flex;position:relative;min-width:0px;max-width:40px;max-height:40px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center}
+.cn55{width:24px;height:24px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn56{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn57{display:block;min-width:0px;max-width:fit-content}
+.cn58{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn59{display:flex;position:relative;min-width:0px;max-width:40px;max-height:40px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center}
+.cn60{width:24px;height:24px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn61{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn62{display:block;min-width:0px;max-width:fit-content}
+.cn63{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn64{display:flex;position:relative;min-width:0px;max-width:40px;max-height:40px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center}
+.cn65{width:24px;height:24px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn66{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn67{display:block;min-width:0px;max-width:fit-content}
+.cn68{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn69{display:flex;position:relative;min-width:0px;max-width:40px;max-height:40px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center}
+.cn70{width:24px;height:24px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn71{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn72{display:block;min-width:0px;max-width:fit-content}
+.cn73{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn74{display:flex;position:relative;min-width:0px;max-width:40px;max-height:40px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center}
+.cn75{width:24px;height:24px;display:block;min-width:0px;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn76{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn77{display:block;min-width:0px;max-width:fit-content}
+.cn78{width:72px;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.cn79{display:block;min-width:0px;color:var(--color-002);font-size:12px;line-height:19.92px;letter-spacing:0.4px;text-align:center}
+.cn80{display:block}
+.cn81{display:block;max-width:1680px;margin-bottom:var(--space-008);margin-left:auto;margin-right:auto}
+.cn82{display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;flex-direction:column}
+.cn83{display:block}
+.cn84{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn85{height:591.562px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn86{width:2560px;height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:-1280px}
+.cn86::before{content:"";display:table;width:0px;height:0px}
+.cn86::after{content:"";display:table;width:0px;height:0px}
+.cn87{width:1280px;height:591.562px;min-height:1px;display:block;float:left}
+.cn88{height:100%;display:block}
+.cn89{width:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn90{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;cursor:default}
+.cn91{display:block}
+.cn92{display:block;margin-left:auto;margin-right:auto}
+.cn93{height:548.562px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;object-fit:cover;aspect-ratio:21 / 9;color:var(--background);background-color:rgb(30, 30, 30);background-image:linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));box-shadow:var(--shadow-001)}
+.cn94{height:100%;display:block}
+.cn95{height:548.562px;display:block;position:absolute;right:0px;left:0px;overflow-x:hidden;overflow-y:hidden}
+.cn96{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;overflow-x:clip;overflow-y:clip;object-fit:cover}
+.cn97{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px}
+.cn98{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px}
+.cn99{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px;filter:blur(0px)}
+.cn100{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn101{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px;background-image:linear-gradient(rgba(26, 26, 26, 0) 40.5%, rgb(26, 26, 26));pointer-events:none}
+.cn102{width:1200px;height:100%;display:flex;position:absolute;top:0px;left:clamp(187.5px, 50%, calc(100% - 187.5px));z-index:var(--z-003);max-width:1200px;padding-right:var(--space-004);padding-left:var(--space-004);align-items:flex-end;row-gap:var(--space-004);column-gap:var(--space-004);transform:matrix(1, 0, 0, 1, -600, 0);transform-origin:600px 274.281px;pointer-events:none}
+.cn103{width:100%;height:59.9844px;display:block}
+.cn104{height:100%;display:block;grid-column-start:span 6;grid-column-end:span 6;text-align:left}
+.cn105{display:block;font-size:var(--font-size-006);font-weight:var(--font-weight-002);line-height:var(--line-height-004)}
+.cn106{display:block;line-height:var(--line-height-002)}
+.cn107{width:100%;height:40px;display:block;max-width:444px}
+.cn108{height:40px;display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);grid-column-start:span 6;grid-column-end:span 6}
+.cn109{width:214px;height:40px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.4px;white-space:nowrap;text-wrap:nowrap;background-color:var(--background);box-shadow:var(--shadow-001);cursor:pointer}
+.cn110{width:214px;height:40px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;font-weight:var(--font-weight-002);letter-spacing:0.4px;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-004);box-shadow:var(--shadow-001);cursor:pointer}
+.cn111{height:40px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:2000px;margin-top:-4px;padding-top:var(--space-004);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);overflow-x:hidden;overflow-y:hidden;color:var(--background);background-color:var(--color-006);box-shadow:var(--shadow-001);margin-left:auto;margin-right:auto}
+.cn112{height:100%;display:none}
+.cn113{height:100%;display:flex;align-items:center;row-gap:var(--space-004);column-gap:var(--space-004);grid-column-start:span 6;grid-column-end:span 6}
+.cn114{width:100%;max-width:360px;display:flex;position:relative;min-width:64px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.4px;white-space:nowrap;text-wrap:nowrap;background-color:var(--background);box-shadow:var(--shadow-001);cursor:pointer}
+.cn115{width:100%;max-width:360px;display:flex;position:relative;min-width:64px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;font-weight:var(--font-weight-002);letter-spacing:0.4px;white-space:nowrap;text-wrap:nowrap;background-color:var(--color-004);box-shadow:var(--shadow-001);cursor:pointer}
+.cn116{width:1280px;height:591.562px;min-height:1px;display:block;float:left}
+.cn117{display:block}
+.cn118{width:100%;display:inline-block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn119{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;cursor:default}
+.cn120{display:block}
+.cn121{display:block;margin-left:auto;margin-right:auto}
+.cn122{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;overflow-x:hidden;overflow-y:hidden;object-fit:cover;aspect-ratio:21 / 9;color:var(--background);background-color:rgb(30, 30, 30);background-image:linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));box-shadow:var(--shadow-001)}
+.cn123{height:100%;display:block}
+.cn124{width:1280px;height:548.562px;display:block;position:absolute;overflow-x:hidden;overflow-y:hidden}
+.cn125{width:1280px;height:100%;display:block;position:absolute;top:0px}
+.cn126{width:1280px;height:100%;display:block;position:absolute;top:0px}
+.cn127{width:1280px;height:100%;display:block;position:absolute;top:0px;filter:blur(0px)}
+.cn128{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn129{width:1280px;height:100%;display:block;position:absolute;top:0px;background-image:linear-gradient(rgba(26, 26, 26, 0) 40.5%, rgb(26, 26, 26));pointer-events:none}
+.cn130{height:40px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:2000px;margin-top:-4px;padding-top:var(--space-004);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);overflow-x:hidden;overflow-y:hidden;color:var(--background);background-color:var(--color-006);box-shadow:var(--shadow-001);margin-left:auto;margin-right:auto}
+.cn131{height:18px;display:flex;position:absolute;right:0px;bottom:-25px;left:0px;z-index:var(--z-001);justify-content:center;align-items:center;color:var(--color-001);text-align:center;list-style-type:none;list-style-position:outside}
+.cn132{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn133{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn134{width:16px;height:8px;display:block;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--color-001)}
+.cn135{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn136{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn137{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn138{width:40px;height:40px;display:flex;position:absolute;top:295.781px;right:16px;z-index:var(--z-001);min-width:0px;margin-top:-20px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;color:var(--background);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;background-color:rgba(33, 33, 33, 0.48);cursor:pointer}
+.cn139{width:auto;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn140{display:block;max-width:1200px;margin-right:auto;margin-left:auto;padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn141{display:block;padding-bottom:64px}
+.cn142{display:flex;flex-direction:column;row-gap:var(--space-004);column-gap:var(--space-004);text-align:center}
+.cn143{display:block;font-size:var(--font-size-010);font-weight:var(--font-weight-002);line-height:var(--line-height-008)}
+.cn144{display:block;color:var(--color-002);font-weight:var(--font-weight-002)}
+.cn145{width:100%;max-width:883px;display:inline-block;font-size:var(--font-size-006);line-height:var(--line-height-004)}
+.cn146{display:flex;margin-top:var(--space-006);margin-right:-24px;margin-bottom:var(--space-005);margin-left:-24px}
+.cn147{width:100%;height:320.984px;min-height:304.99px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:600px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-007);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;align-items:flex-start;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn148{width:auto;height:35px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--border);font-size:var(--font-size-009);line-height:var(--line-height-007)}
+.cn149{height:27.9844px;display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn150{height:100%;display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-002);line-height:var(--line-height-006);white-space:nowrap}
+.cn151{display:block;margin-bottom:var(--space-005);color:var(--color-002);line-height:var(--line-height-002)}
+.cn152{width:196.906px;height:40px;display:flex;position:absolute;bottom:24px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn153{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn154{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn155{display:block;padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn156{width:100%;height:100%;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(128, 128, 128);display:none;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12;overflow-x:hidden;overflow-y:hidden;color:rgb(128, 128, 128)}
+.cn157{width:1px;height:320.984px;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);display:block;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12}
+.cn158{width:100%;height:320.984px;min-height:304.99px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:600px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-007);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;align-items:flex-start;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn159{width:auto;height:35px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--border);font-size:var(--font-size-009);line-height:var(--line-height-007)}
+.cn160{display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn161{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-002);line-height:var(--line-height-006);white-space:nowrap}
+.cn162{display:block;margin-bottom:var(--space-005);color:var(--color-002);line-height:var(--line-height-002)}
+.cn163{width:168.062px;height:40px;display:flex;position:absolute;bottom:24px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn164{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn165{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn166{display:block;padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn167{width:100%;height:100%;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(128, 128, 128);display:none;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12;overflow-x:hidden;overflow-y:hidden;color:rgb(128, 128, 128)}
+.cn168{width:1px;height:320.984px;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);display:block;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12}
+.cn169{width:100%;height:320.984px;min-height:304.99px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:600px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-007);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;align-items:flex-start;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn170{width:auto;height:35px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--border);font-size:var(--font-size-009);line-height:var(--line-height-007)}
+.cn171{display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn172{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-002);line-height:var(--line-height-006);white-space:nowrap}
+.cn173{display:block;margin-bottom:var(--space-005);color:var(--color-002);line-height:var(--line-height-002)}
+.cn174{width:232.281px;height:40px;display:flex;position:absolute;bottom:24px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn175{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn176{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn177{display:block;padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn178{width:100%;height:100%;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(128, 128, 128);display:none;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12;overflow-x:hidden;overflow-y:hidden;color:rgb(128, 128, 128)}
+.cn179{width:1px;height:320.984px;border-right-width:1px;border-right-style:solid;border-right-color:var(--foreground);display:block;opacity:0.2;flex-shrink:0;grid-column-start:span 12;grid-column-end:span 12}
+.cn180{width:100%;height:320.984px;min-height:304.99px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:600px;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-007);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;align-items:flex-start;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn181{width:auto;height:35px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;color:var(--border);font-size:var(--font-size-009);line-height:var(--line-height-007)}
+.cn182{display:flex;align-items:center;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn183{display:block;font-size:var(--font-size-004);font-weight:var(--font-weight-002);line-height:var(--line-height-006);white-space:nowrap}
+.cn184{display:block;margin-bottom:var(--space-005);color:var(--color-002);line-height:var(--line-height-002)}
+.cn185{width:192.984px;height:40px;display:flex;position:absolute;bottom:24px;min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn186{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn187{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn188{display:block;text-align:center}
+.cn189{width:100%;max-width:361px;height:40px;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;padding-top:var(--space-002);padding-right:var(--space-005);padding-bottom:var(--space-002);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--color-001);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;background-color:rgb(238, 238, 238);box-shadow:var(--shadow-001);cursor:pointer}
+.cn190{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn191{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn192{display:block}
+.cn193{display:block;padding-top:var(--space-008);padding-bottom:var(--space-005)}
+.cn194{display:block;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn195{display:flex;margin-bottom:32px;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);text-align:center}
+.cn196{display:block;font-size:var(--font-size-010);font-weight:var(--font-weight-002);line-height:var(--line-height-008)}
+.cn197{display:block;max-width:900px;margin-right:auto;margin-left:auto;color:var(--color-002)}
+.cn198{display:inline;font-size:var(--font-size-006);font-weight:var(--font-weight-002);line-height:var(--line-height-004)}
+.cn199{display:block;max-width:1680px;padding-right:var(--space-005);padding-bottom:var(--space-004);padding-left:var(--space-005);margin-left:auto;margin-right:auto}
+.cn200{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px}
+.cn201{display:none}
+.cn202{display:none}
+.cn203{height:532.812px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;padding-right:50px;padding-left:50px;overflow-x:hidden;overflow-y:hidden}
+.cn204{width:11320px;height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:-10188px;transform:matrix(1, 0, 0, 1, -3396, 0);transform-origin:5660px 266.406px}
+.cn204::before{content:"";display:table;width:0px;height:0px}
+.cn204::after{content:"";display:table;width:0px;height:0px}
+.cn205{width:1132px;height:532.812px;min-height:1px;display:block;float:left;transform:none}
+.cn205::before{content:"";display:table;width:0px;height:0px}
+.cn205::after{content:"";display:table;width:0px;height:0px}
+.cn206{display:none}
+.cn207{display:none}
+.cn208{display:none}
+.cn209{display:none}
+.cn210{display:none}
+.cn211{display:none}
+.cn212{display:none}
+.cn213{display:none}
+.cn214{display:none}
+.cn215{display:none}
+.cn216{display:none}
+.cn217{display:none}
+.cn218{display:none}
+.cn219{display:none}
+.cn220{display:none}
+.cn221{display:none}
+.cn222{display:none}
+.cn223{display:none}
+.cn224{display:none}
+.cn225{display:none}
+.cn226{display:none}
+.cn227{display:none}
+.cn228{display:none}
+.cn229{display:none}
+.cn230{display:none}
+.cn231{display:none}
+.cn232{display:none}
+.cn233{display:none}
+.cn234{display:none}
+.cn235{display:none}
+.cn236{display:none}
+.cn237{display:none}
+.cn238{display:none}
+.cn239{display:none}
+.cn240{display:none}
+.cn241{display:none}
+.cn242{display:none}
+.cn243{display:none}
+.cn244{display:none}
+.cn245{display:none}
+.cn246{display:none}
+.cn247{display:none}
+.cn248{display:none}
+.cn249{display:none}
+.cn250{width:1132px;height:532.812px;min-height:1px;display:block;float:left}
+.cn251{height:100%;display:block}
+.cn252{width:100%;height:100%;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn253{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn254{width:100%;height:471.469px;display:block;position:absolute;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn255{display:inline}
+.cn256{display:inline}
+.cn257{display:inline}
+.cn258{width:100%;height:471px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLDRANDhsNDQoWDSIODgUYGhMlGBYfIhUaKysjHR0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLAg0CHBAQEDscHSg7Oy8vLy87Ly8vLy8vOzsvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAABBQADBP/EAB0QAAIDAAIDAAAAAAAAAAAAAAACAQMRM1EEEyH/xAAUAQEAAAAAAAAAAAAAAAAAAAAF/8QAHhEAAAUFAQAAAAAAAAAAAAAAAAEEBiICAwUVFhH/2gAMAwEAAhEDEQA/ANFEwrfRlX5CevNE7zgaWbsRSW20eGOALXqXXS4C8rFts7dOEAnIQIvp2puTgHE2QfHPlMf/2Q==);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn259{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn260{height:120px;display:block;position:absolute;right:0px;bottom:0px;left:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn261{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn262{width:1132px;height:532.812px;min-height:1px;display:block;float:left}
+.cn263{height:100%;display:block}
+.cn264{width:100%;height:100%;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn265{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn266{width:100%;height:471.469px;display:block;position:absolute;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn267{display:inline}
+.cn268{display:inline}
+.cn269{display:inline}
+.cn270{width:100%;height:471px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoXDhgQGg0NDh0dFh0dHR8tHRYdFhUcKSslGh0oKRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAOHDsoGig7Oy8vOy87OzsvLy87OzU7Ly8vLy87Oy8vLy81Ly8vLy8vLy8vLy8vLy8vOy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAGBwABBf/EACMQAAAFAwMFAAAAAAAAAAAAAAACAwQFARJRERMxBhUhI3H/xAAVAQEBAAAAAAAAAAAAAAAAAAACAP/EABgRAAMBAQAAAAAAAAAAAAAAAAABIQIR/9oADAMBAAIRAxEAPwAC6cjWyj0m4enIbzuEjTdPU9pdbchGRaqhXBbT1p5B26eOez6bx+MhZcFvC6C87GM26prVKc5EGFIKqKL1vPU30WCyih//2Q==);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn271{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn272{height:120px;display:block;position:absolute;right:0px;bottom:0px;left:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn273{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn274{display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--background)}
+.cn275{height:32px;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007);font-weight:var(--font-weight-002);line-height:32px;-webkit-line-clamp:2}
+.cn276{display:block;color:var(--color-003)}
+.cn277{height:24px;overflow-x:hidden;overflow-y:hidden;-webkit-line-clamp:2}
+.cn278{width:1132px;height:532.812px;min-height:1px;display:block;float:left}
+.cn279{height:100%;display:block}
+.cn280{width:100%;height:100%;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn281{height:100%;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn282{width:100%;height:471.469px;display:block;position:absolute;left:0px;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn283{display:inline}
+.cn284{display:inline}
+.cn285{display:inline}
+.cn286{width:100%;height:471px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgFCgoFBQwFBQUFBREJCgUMFxMZGBYTFhUaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAB//EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAWAQADAAAAAAAAAAAAAAAAAAAAAwT/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwChgITgAB//2Q==);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn287{height:100%;display:block;position:absolute;top:0px;right:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn288{height:120px;display:block;position:absolute;right:0px;bottom:0px;left:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn289{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn290{display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--background)}
+.cn291{height:32px;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007);font-weight:var(--font-weight-002);line-height:32px;-webkit-line-clamp:2}
+.cn292{display:block;color:var(--color-003)}
+.cn293{height:24px;overflow-x:hidden;overflow-y:hidden;-webkit-line-clamp:2}
+.cn294{display:none}
+.cn295{display:none}
+.cn296{display:none}
+.cn297{display:none}
+.cn298{display:none}
+.cn299{display:none}
+.cn300{display:none}
+.cn301{display:none}
+.cn302{display:none}
+.cn303{display:none}
+.cn304{display:none}
+.cn305{display:none}
+.cn306{display:none}
+.cn307{display:none}
+.cn308{display:none}
+.cn309{height:18px;display:flex;position:absolute;right:0px;bottom:-25px;left:0px;z-index:var(--z-001);justify-content:center;align-items:center;color:var(--color-001);text-align:center;list-style-type:none;list-style-position:outside}
+.cn310{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn311{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn312{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn313{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn314{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn315{width:16px;height:8px;display:block;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--color-001)}
+.cn316{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn317{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn318{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn319{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn320{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn321{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn322{display:block;background-color:rgb(245, 245, 245);margin-left:auto;margin-right:auto}
+.cn323{display:block;max-width:1200px;margin-right:auto;margin-left:auto;padding-top:var(--space-008);padding-right:var(--space-005);padding-bottom:var(--space-008);padding-left:var(--space-005)}
+.cn324{display:flex;margin-bottom:var(--space-006);flex-direction:column;row-gap:var(--space-004);column-gap:var(--space-004);text-align:center}
+.cn325{display:block;font-size:var(--font-size-010);font-weight:var(--font-weight-002);line-height:var(--line-height-008)}
+.cn326{display:block;max-width:672px;margin-right:auto;margin-left:auto;color:var(--color-002)}
+.cn327{display:inline;font-size:var(--font-size-006);font-weight:var(--font-weight-002);line-height:var(--line-height-004)}
+.cn328{display:grid;row-gap:var(--space-005);column-gap:var(--space-005);grid-template-columns:repeat(6, minmax(0, 1fr));grid-template-rows:repeat(3, minmax(0, 1fr))}
+.cn329{height:366px;display:block;grid-column-start:span 3;grid-column-end:span 3}
+.cn330{display:block}
+.cn331{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn332{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn333{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn334{display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn335{height:24px;display:block;color:var(--color-003)}
+.cn336{display:inline;color:var(--background)}
+.cn337{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn338{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn339{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn340{height:366px;display:block;grid-column-start:span 3;grid-column-end:span 3}
+.cn341{display:block}
+.cn342{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn343{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn344{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn345{display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn346{height:24px;display:block;color:var(--color-003)}
+.cn347{display:inline;color:var(--background)}
+.cn348{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn349{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn350{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn351{height:366px;display:block;grid-column-start:span 2;grid-column-end:span 2}
+.cn352{display:block}
+.cn353{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn354{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn355{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn356{display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn357{height:24px;display:block;color:var(--color-003)}
+.cn358{display:inline;color:var(--background)}
+.cn359{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn360{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn361{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn362{height:366px;display:block;grid-column-start:span 2;grid-column-end:span 2}
+.cn363{display:block}
+.cn364{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn365{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn366{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn367{display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn368{height:24px;display:block;color:var(--color-003)}
+.cn369{display:inline;color:var(--background)}
+.cn370{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn371{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn372{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn373{height:366px;display:block;grid-column-start:span 2;grid-column-end:span 2}
+.cn374{display:block}
+.cn375{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn376{width:100%;height:100%;display:block;position:absolute;top:0px;left:0px;min-width:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn377{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn378{display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn379{height:24px;display:block;color:var(--color-003)}
+.cn380{display:inline;color:var(--background)}
+.cn381{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn382{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn383{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn384{height:366px;display:block;grid-column-start:span 6;grid-column-end:span 6}
+.cn385{display:block}
+.cn386{height:366px;display:grid;position:relative;top:0px;right:0px;bottom:0px;left:0px;max-width:100%;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);grid-template-rows:318px;background-color:var(--color-004);grid-template-columns:minmax(0, 1fr)}
+.cn387{width:1152px;height:100%;display:block;position:absolute;top:0px;z-index:var(--z-002);min-width:0px;max-height:366px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;object-fit:cover}
+.cn388{height:100%;display:block}
+.cn389{width:100%;height:366px;display:block;position:absolute;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;color:rgba(0, 0, 0, 0)}
+.cn390{display:flex;z-index:var(--z-004);flex-direction:column-reverse;align-self:center;color:var(--background)}
+.cn391{width:50%;display:block;font-size:var(--font-size-008);font-weight:var(--font-weight-002);line-height:var(--line-height-003);letter-spacing:0.25008px}
+.cn392{height:24px;display:block;color:var(--color-003)}
+.cn393{display:inline;color:var(--background)}
+.cn394{width:144.609px;height:40px;display:flex;position:absolute;bottom:24px;left:24px;z-index:var(--z-003);min-width:64px;max-width:361px;padding-top:var(--space-002);padding-right:var(--space-003);padding-bottom:var(--space-002);padding-left:var(--space-003);border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);justify-content:center;align-items:center;vertical-align:middle;color:var(--background);font-weight:var(--font-weight-002);letter-spacing:0.46px;white-space:nowrap;text-wrap:nowrap;box-shadow:var(--shadow-001);cursor:pointer}
+.cn395{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn396{width:auto;height:22px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-005)}
+.cn397{display:block;max-width:1200px;margin-right:auto;margin-left:auto;padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn398{display:block}
+.cn399{display:block;padding-top:var(--space-006);padding-bottom:var(--space-006)}
+.cn400{display:flex;margin-bottom:var(--space-006);flex-direction:column;row-gap:var(--space-004);column-gap:var(--space-004);text-align:center}
+.cn401{display:block;font-size:var(--font-size-010);font-weight:var(--font-weight-002);line-height:var(--line-height-008)}
+.cn402{display:block;color:var(--color-002);font-weight:var(--font-weight-002)}
+.cn403{display:inline;font-size:var(--font-size-006);line-height:var(--line-height-004)}
+.cn404{display:flex;row-gap:var(--space-005);column-gap:var(--space-005)}
+.cn405{width:100%;height:420px;display:flex;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;box-shadow:var(--shadow-002)}
+.cn406{width:100%;height:245px;display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 368 / 276;color:rgba(0, 0, 0, 0)}
+.cn407{height:174.672px;min-height:166px;display:flex;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);flex-direction:column;flex-grow:1;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn408{display:block;font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-009)}
+.cn409{display:block;flex-grow:1;color:var(--color-002)}
+.cn410{display:flex;flex-wrap:wrap;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn411{height:36px;display:block;cursor:pointer}
+.cn412{width:125px;height:36px;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;margin-left:-8px;padding-top:var(--space-001);padding-right:var(--space-002);padding-bottom:var(--space-001);padding-left:var(--space-002);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;align-self:flex-start;vertical-align:middle;color:var(--color-001);font-size:var(--font-size-001);font-weight:var(--font-weight-002);letter-spacing:0.4px;text-align:center}
+.cn413{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn414{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-003)}
+.cn415{width:100%;height:420px;display:flex;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;box-shadow:var(--shadow-002)}
+.cn416{width:100%;height:244px;display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 368 / 276;color:rgba(0, 0, 0, 0)}
+.cn417{height:175.625px;min-height:166px;display:flex;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);flex-direction:column;flex-grow:1;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn418{display:block;font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-009)}
+.cn419{display:block;flex-grow:1;color:var(--color-002)}
+.cn420{display:flex;flex-wrap:wrap;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn421{height:36px;display:block;cursor:pointer}
+.cn422{width:125px;height:36px;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;margin-left:-8px;padding-top:var(--space-001);padding-right:var(--space-002);padding-bottom:var(--space-001);padding-left:var(--space-002);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;align-self:flex-start;vertical-align:middle;color:var(--color-001);font-size:var(--font-size-001);font-weight:var(--font-weight-002);letter-spacing:0.4px;text-align:center}
+.cn423{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn424{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-003)}
+.cn425{width:100%;height:420px;display:flex;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);flex-direction:column;box-shadow:var(--shadow-002)}
+.cn426{width:100%;height:245px;display:block;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:auto 368 / 276;color:rgba(0, 0, 0, 0)}
+.cn427{height:174.672px;min-height:166px;display:flex;padding-top:var(--space-005);padding-right:var(--space-005);padding-bottom:var(--space-005);padding-left:var(--space-005);flex-direction:column;flex-grow:1;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn428{display:block;font-size:var(--font-size-003);font-weight:var(--font-weight-002);line-height:var(--line-height-009)}
+.cn429{display:block;flex-grow:1;color:var(--color-002)}
+.cn430{display:flex;flex-wrap:wrap;row-gap:var(--space-002);column-gap:var(--space-002)}
+.cn431{height:36px;display:block;cursor:pointer}
+.cn432{width:125px;height:36px;display:inline-flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;min-width:64px;margin-left:-8px;padding-top:var(--space-001);padding-right:var(--space-002);padding-bottom:var(--space-001);padding-left:var(--space-002);border-top-left-radius:var(--radius-002);border-top-right-radius:var(--radius-002);border-bottom-right-radius:var(--radius-002);border-bottom-left-radius:var(--radius-002);justify-content:center;align-items:center;align-self:flex-start;vertical-align:middle;color:var(--color-001);font-size:var(--font-size-001);font-weight:var(--font-weight-002);letter-spacing:0.4px;text-align:center}
+.cn433{display:flex;margin-right:-4px;margin-left:var(--space-002)}
+.cn434{width:auto;height:20px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-003)}
+
+@media (max-width: 571px) {
+.cn0{height:6895.45px}
+.cn5{min-height:56px}
+.cn10{display:none}
+.cn11{display:block}
+.cn14{display:flex;justify-content:flex-end}
+.cn15{display:none}
+.cn20{display:flex;top:0px;right:0px;bottom:0px;left:0px}
+.cn21{display:block}
+.cn22{min-width:0px}
+.cn23{display:none}
+.cn34{display:none}
+.cn38{display:flex;min-width:0}
+.cn39{height:48px;display:flex;top:0px;right:0px;bottom:0px;left:0px}
+.cn40{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn41{height:24px;min-width:0}
+.cn46{width:375px;height:93.9062px;display:block}
+.cn47{top:0px;right:0px;bottom:0px;left:0px}
+.cn49{top:0px;right:0px;bottom:0px;left:0px}
+.cn52{min-width:0}
+.cn54{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn55{min-width:0}
+.cn56{min-width:0}
+.cn57{min-width:0}
+.cn59{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn60{min-width:0}
+.cn61{min-width:0}
+.cn62{min-width:0}
+.cn64{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn65{min-width:0}
+.cn66{min-width:0}
+.cn67{min-width:0}
+.cn69{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn70{min-width:0}
+.cn71{min-width:0}
+.cn72{min-width:0}
+.cn74{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn75{min-width:0}
+.cn76{min-width:0}
+.cn77{min-width:0}
+.cn79{min-width:0}
+.cn85{height:467.125px}
+.cn86{width:750px;margin-right:-375px}
+.cn87{width:375px;height:467.125px}
+.cn93{height:328.125px;aspect-ratio:4 / 3.5}
+.cn95{height:328.125px}
+.cn102{width:375px;transform:matrix(1, 0, 0, 1, -187.5, 0);transform-origin:187.5px 164.062px}
+.cn103{height:54.6719px}
+.cn104{grid-column-start:span 12;grid-column-end:span 12;text-align:center}
+.cn105{font-size:var(--font-size-003);line-height:var(--line-height-009)}
+.cn107{display:none}
+.cn111{height:136px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn112{display:block}
+.cn113{flex-direction:column;justify-content:center;grid-column-start:span 12;grid-column-end:span 12}
+.cn114{height:40px;top:0px;right:0px;bottom:0px;left:0px}
+.cn115{height:40px;top:0px;right:0px;bottom:0px;left:0px}
+.cn116{width:375px;height:467.125px}
+.cn122{aspect-ratio:4 / 3.5}
+.cn130{height:136px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn138{top:233.562px}
+.cn140{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn143{font-size:32px;line-height:37.344px}
+.cn145{font-size:var(--font-size-003);line-height:var(--line-height-009)}
+.cn146{margin-right:-16px;margin-left:-16px;flex-direction:column}
+.cn147{height:252.938px;padding-bottom:58px;min-height:0}
+.cn149{height:23.9375px}
+.cn150{font-size:18px;line-height:23.94px}
+.cn156{height:1px;display:block}
+.cn157{display:none}
+.cn158{height:252.938px;padding-bottom:58px;min-height:0}
+.cn161{font-size:18px;line-height:23.94px}
+.cn167{height:1px;display:block}
+.cn168{display:none}
+.cn169{height:252.938px;padding-bottom:58px;min-height:0}
+.cn172{font-size:18px;line-height:23.94px}
+.cn178{height:1px;display:block}
+.cn179{display:none}
+.cn180{height:252.938px;padding-bottom:58px;min-height:0}
+.cn183{font-size:18px;line-height:23.94px}
+.cn193{padding-bottom:var(--space-004)}
+.cn195{margin-bottom:var(--space-004)}
+.cn196{font-size:32px;line-height:37.344px}
+.cn198{font-size:var(--font-size-003);line-height:var(--line-height-009)}
+.cn199{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn203{height:267.828px}
+.cn204{width:2430px;margin-right:-2187px;transform:matrix(1, 0, 0, 1, -729, 0);transform-origin:1215px 133.914px}
+.cn205{width:243px;height:267.828px}
+.cn205::before{display:none}
+.cn205::after{display:none}
+.cn250{width:243px;height:267.828px}
+.cn252{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn253{aspect-ratio:393 / 436.001}
+.cn254{height:227px;aspect-ratio:393 / 393.001}
+.cn258{height:227px;background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLDhUUDhgNDQ0WDRUNDgoNFxUjGCITFhUaKysjGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLAg0CHBAQEDscFig7Oy8vLy87Ly8vLy8vOzsvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAAAwUC/8QAHBAAAgMAAwEAAAAAAAAAAAAAAAIBAxETIVEE/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/EABwRAAAHAQEAAAAAAAAAAAAAAAABAwQGFSIFAv/aAAwDAQACEQMRAD8AbS0LPZRr+lOPNJDzkBS0+iLNKMnxTwDHq8l89stB9jbdOAYr7cAhdvEro8BhB7MKMtD/2Q==)}
+.cn259{background-image:linear-gradient(rgba(26, 26, 26, 0) 31.5%, rgb(26, 26, 26) 81.5%)}
+.cn260{height:115px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn262{width:243px;height:267.828px}
+.cn264{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn265{aspect-ratio:393 / 436.001}
+.cn266{height:227px;aspect-ratio:393 / 393.001}
+.cn270{height:227px}
+.cn271{background-image:linear-gradient(rgba(26, 26, 26, 0) 31.5%, rgb(26, 26, 26) 81.5%)}
+.cn272{height:115px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn275{height:56px;font-size:var(--font-size-003);line-height:var(--line-height-002)}
+.cn277{height:48px}
+.cn278{width:243px;height:267.828px}
+.cn280{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn281{aspect-ratio:393 / 436.001}
+.cn282{height:227px;aspect-ratio:393 / 393.001}
+.cn286{height:227px;background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgFCgoFBQwFBQUFBREJCgUMFxMZGBYTFhUaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLBQUFEAUFEC8cFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAB//EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAWAQADAAAAAAAAAAAAAAAAAAAAAwT/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwClAITgAB//2Q==)}
+.cn287{background-image:linear-gradient(rgba(26, 26, 26, 0) 31.5%, rgb(26, 26, 26) 81.5%)}
+.cn288{height:115px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn291{height:56px;font-size:var(--font-size-003);line-height:var(--line-height-002)}
+.cn293{height:48px}
+.cn323{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn325{font-size:32px;line-height:37.344px}
+.cn327{font-size:var(--font-size-003);line-height:var(--line-height-009)}
+.cn328{row-gap:var(--space-004);column-gap:var(--space-004);grid-template-columns:repeat(1, minmax(0, 1fr));grid-template-rows:repeat(6, minmax(0, 1fr))}
+.cn329{grid-column-start:initial;grid-column-end:initial}
+.cn331{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn334{font-size:25px;line-height:30.875px}
+.cn337{left:16px}
+.cn340{grid-column-start:initial;grid-column-end:initial}
+.cn342{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn345{font-size:25px;line-height:30.875px}
+.cn348{left:16px}
+.cn351{grid-column-start:initial;grid-column-end:initial}
+.cn353{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn356{font-size:25px;line-height:30.875px}
+.cn359{left:16px}
+.cn362{grid-column-start:initial;grid-column-end:initial}
+.cn364{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn367{font-size:25px;line-height:30.875px}
+.cn370{left:16px}
+.cn373{grid-column-start:initial;grid-column-end:initial}
+.cn375{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn378{font-size:25px;line-height:30.875px}
+.cn381{left:16px}
+.cn384{grid-column-start:initial;grid-column-end:initial}
+.cn386{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn387{width:343px}
+.cn391{width:100%;font-size:25px;line-height:30.875px}
+.cn394{left:16px}
+.cn397{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn401{font-size:32px;line-height:37.344px}
+.cn403{font-size:var(--font-size-003);line-height:var(--line-height-009)}
+.cn404{flex-direction:column;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn405{height:427.328px}
+.cn406{height:229px}
+.cn407{height:198.672px;min-height:0}
+.cn415{height:402.438px}
+.cn416{height:228px}
+.cn417{height:174.672px;min-height:0}
+.cn425{height:403.328px}
+.cn426{height:229px}
+.cn427{min-height:0}
+}
+
+@media (min-width: 572px) and (max-width: 1024px) {
+.cn0{height:6046.11px}
+.cn10{display:none}
+.cn11{display:block}
+.cn23{display:none}
+.cn34{display:none}
+.cn38{display:flex;min-width:0}
+.cn39{height:48px;display:flex;top:0px;right:0px;bottom:0px;left:0px}
+.cn40{top:0px;right:0px;bottom:0px;left:0px;min-width:0}
+.cn41{height:24px;min-width:0}
+.cn85{height:412.141px}
+.cn86{width:1536px;margin-right:-768px}
+.cn87{width:768px;height:412.141px}
+.cn93{height:329.141px}
+.cn95{height:329.141px}
+.cn102{width:768px;transform:matrix(1, 0, 0, 1, -384, 0);transform-origin:384px 164.57px}
+.cn103{height:55.9844px}
+.cn105{font-size:20.9888px;line-height:27.9991px}
+.cn107{display:none}
+.cn111{height:80px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn112{display:block}
+.cn114{height:40px;top:0px;right:0px;bottom:0px;left:0px}
+.cn115{height:40px;top:0px;right:0px;bottom:0px;left:0px}
+.cn116{width:768px;height:412.141px}
+.cn130{height:80px;padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn138{top:206.062px}
+.cn140{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn143{font-size:41.1312px;line-height:48.0001px}
+.cn145{font-size:20.9888px;line-height:27.9991px}
+.cn146{margin-right:-16px;margin-left:-16px;flex-direction:column}
+.cn147{height:225px;padding-bottom:58px;min-height:0}
+.cn149{height:24px}
+.cn150{font-size:18.0448px;line-height:23.9996px}
+.cn156{height:1px;display:block}
+.cn157{display:none}
+.cn158{height:225px;padding-bottom:58px;min-height:0}
+.cn161{font-size:18.0448px;line-height:23.9996px}
+.cn167{height:1px;display:block}
+.cn168{display:none}
+.cn169{height:253px;padding-bottom:58px;min-height:0}
+.cn172{font-size:18.0448px;line-height:23.9996px}
+.cn178{height:1px;display:block}
+.cn179{display:none}
+.cn180{height:225px;padding-bottom:58px;min-height:0}
+.cn183{font-size:18.0448px;line-height:23.9996px}
+.cn193{padding-bottom:var(--space-004)}
+.cn196{font-size:41.1312px;line-height:48.0001px}
+.cn198{font-size:20.9888px;line-height:27.9991px}
+.cn203{height:290.984px}
+.cn204{width:6200px;margin-right:-5580px;transform:matrix(1, 0, 0, 1, -1860, 0);transform-origin:3100px 145.492px}
+.cn205{width:620px;height:290.984px}
+.cn205::before{display:none}
+.cn205::after{display:none}
+.cn250{width:620px;height:290.984px}
+.cn252{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn254{height:258.875px}
+.cn258{height:259px}
+.cn262{width:620px;height:290.984px}
+.cn264{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn266{height:258.875px}
+.cn270{height:259px}
+.cn278{width:620px;height:290.984px}
+.cn280{padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002)}
+.cn282{height:258.875px}
+.cn286{height:259px}
+.cn323{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn325{font-size:41.1312px;line-height:48.0001px}
+.cn327{font-size:20.9888px;line-height:27.9991px}
+.cn328{row-gap:var(--space-004);column-gap:var(--space-004);grid-template-columns:repeat(2, minmax(0, 1fr))}
+.cn329{grid-column-start:initial;grid-column-end:initial}
+.cn331{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn334{font-size:29.1504px;line-height:36.0007px}
+.cn337{left:16px}
+.cn340{grid-column-start:initial;grid-column-end:initial}
+.cn342{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn345{font-size:29.1504px;line-height:36.0007px}
+.cn348{left:16px}
+.cn351{grid-column-start:initial;grid-column-end:initial}
+.cn353{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn356{font-size:29.1504px;line-height:36.0007px}
+.cn359{left:16px}
+.cn362{grid-column-start:initial;grid-column-end:initial}
+.cn364{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn367{font-size:29.1504px;line-height:36.0007px}
+.cn370{left:16px}
+.cn373{grid-column-start:initial;grid-column-end:initial}
+.cn375{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn378{font-size:29.1504px;line-height:36.0007px}
+.cn381{left:16px}
+.cn384{grid-column-start:initial;grid-column-end:initial}
+.cn386{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn387{width:360px}
+.cn391{width:100%;font-size:29.1504px;line-height:36.0007px}
+.cn394{left:16px}
+.cn397{padding-right:var(--space-004);padding-left:var(--space-004)}
+.cn401{font-size:41.1312px;line-height:48.0001px}
+.cn403{font-size:20.9888px;line-height:27.9991px}
+.cn404{flex-direction:column;row-gap:var(--space-004);column-gap:var(--space-004)}
+.cn405{height:658.656px}
+.cn406{height:491px}
+.cn407{height:168px;min-height:168px}
+.cn415{height:656.75px}
+.cn416{height:489px}
+.cn417{height:168px;min-height:168px}
+.cn419{height:41.3281px}
+.cn425{height:658.656px}
+.cn426{height:491px}
+.cn427{height:168px;min-height:168px}
+.cn429{height:41.3281px}
+}
+
+@media (min-width: 1601px) {
+.cn0{height:4708.73px}
+.cn85{height:763px}
+.cn86{width:3360px;margin-right:-1680px}
+.cn87{width:1680px;height:763px}
+.cn93{height:720px}
+.cn95{height:720px}
+.cn102{transform-origin:600px 360px}
+.cn116{width:1680px;height:763px}
+.cn124{width:1680px;height:720px}
+.cn125{width:1680px}
+.cn126{width:1680px}
+.cn127{width:1680px}
+.cn129{width:1680px}
+.cn138{top:381.5px}
+.cn200{display:flex;max-width:100%;flex-direction:column}
+.cn201{width:40px;height:40px;display:flex;position:absolute;top:357.453px;left:-24px;z-index:var(--z-001);min-width:0px;margin-top:-20px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;color:var(--background);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;background-color:rgba(33, 33, 33, 0.48);cursor:pointer}
+.cn202{width:24px;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden;transform:matrix(-1, 0, 0, 1, 0, 0);transform-origin:12px 12px}
+.cn203{height:714.922px;padding-right:0;padding-left:0;overflow-x:initial;overflow-y:initial}
+.cn204{width:1632px;padding-right:50px;padding-left:50px;overflow-x:hidden;overflow-y:hidden;transform:none;margin-right:0;transform-origin:initial}
+.cn204::before{display:none}
+.cn204::after{display:none}
+.cn205{width:15320px;height:714.922px;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:-13788px;transform:matrix(1, 0, 0, 1, -1532, 0);transform-origin:7660px 357.461px;min-height:0;float:initial}
+.cn206{width:1532px;height:714.922px;min-height:1px;display:block;float:left}
+.cn207{display:block}
+.cn208{width:100%;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn209{display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn210{width:1500px;height:642.922px;display:block;position:absolute;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn214{width:100%;height:643px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIDQgLEQ4WDhQPDQ0NFhENDQ0NFx8ZGBYVFhUaHysjGikoHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHAoLHDsoFhw7Ly8vLy87Ly8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAXAAEAAwAAAAAAAAAAAAAAAAAGAAIF/8QAIBAAAQQCAQUAAAAAAAAAAAAAAQACAwQRQSEFExQVMf/EABUBAQEAAAAAAAAAAAAAAAAAAAMC/8QAGhEAAQUBAAAAAAAAAAAAAAAAAgAREjFRA//aAAwDAQACEQMRAD8AB1aETGA5SUwRnpWM6RaB7u0OSkLHO9b90pgWpw6C1LDvUGGEnKitecfHPKiqJahLoL0v/9k=);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn215{width:1500px;height:100%;display:block;position:absolute;top:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn216{width:1500px;height:120px;display:block;position:absolute;bottom:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn217{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn218{width:1532px;height:714.922px;min-height:1px;display:block;float:left}
+.cn219{display:block}
+.cn220{width:100%;height:714.922px;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn221{height:682.922px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn222{width:1500px;height:642.922px;display:block;position:absolute;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn226{width:100%;height:643px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLDRANDhsNDQoWDSIODgUYGhMlGBYfIhUaKysjHR0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLAg0CHBAQEDscHSg7Oy8vLy87Ly8vLy8vOzsvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAABBQADBP/EAB0QAAIDAAIDAAAAAAAAAAAAAAACAQMRM1EEEyH/xAAUAQEAAAAAAAAAAAAAAAAAAAAF/8QAHhEAAAUFAQAAAAAAAAAAAAAAAAEEBiICAwUVFhH/2gAMAwEAAhEDEQA/ANFEwrfRlX5CevNE7zgaWbsRSW20eGOALXqXXS4C8rFts7dOEAnIQIvp2puTgHE2QfHPlMf/2Q==);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn227{width:1500px;height:100%;display:block;position:absolute;top:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn228{width:1500px;height:120px;display:block;position:absolute;bottom:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn229{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn230{height:64px;display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--background)}
+.cn231{height:32px;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007);font-weight:var(--font-weight-002);line-height:32px;white-space:nowrap;-webkit-line-clamp:2;display:block}
+.cn232{height:24px;display:block;color:var(--color-003)}
+.cn233{height:24px;overflow-x:hidden;overflow-y:hidden;-webkit-line-clamp:2;display:block}
+.cn234{width:1532px;height:714.922px;min-height:1px;display:block;float:left}
+.cn235{display:block}
+.cn236{width:100%;height:714.922px;display:inline-block;padding-top:var(--space-004);padding-right:var(--space-004);padding-bottom:var(--space-004);padding-left:var(--space-004);cursor:pointer}
+.cn237{height:682.922px;display:block;position:relative;top:0px;right:0px;bottom:0px;left:0px;border-top-left-radius:var(--radius-003);border-top-right-radius:var(--radius-003);border-bottom-right-radius:var(--radius-003);border-bottom-left-radius:var(--radius-003);overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 546.344;background-color:var(--color-006)}
+.cn238{width:1500px;height:642.922px;display:block;position:absolute;overflow-x:hidden;overflow-y:hidden;aspect-ratio:1200 / 514.344}
+.cn242{width:100%;height:643px;display:block;position:absolute;max-width:2400px;overflow-x:clip;overflow-y:clip;object-fit:cover;aspect-ratio:2400 / 1092;color:rgba(0, 0, 0, 0);background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoXDhgQGg0NDh0dFh0dHR8tHRYdFhUcKSslGh0oKRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAOHDsoGig7Oy8vOy87OzsvLy87OzU7Ly8vLy87Oy8vLy81Ly8vLy8vLy8vLy8vLy8vOy8vLy8vL//AABEIAAsAGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAGBwABBf/EACMQAAAFAwMFAAAAAAAAAAAAAAACAwQFARJRERMxBhUhI3H/xAAVAQEBAAAAAAAAAAAAAAAAAAACAP/EABgRAAMBAQAAAAAAAAAAAAAAAAABIQIR/9oADAMBAAIRAxEAPwAC6cjWyj0m4enIbzuEjTdPU9pdbchGRaqhXBbT1p5B26eOez6bx+MhZcFvC6C87GM26prVKc5EGFIKqKL1vPU30WCyih//2Q==);background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+.cn243{width:1500px;height:100%;display:block;position:absolute;top:0px;left:0px;z-index:var(--z-002);background-image:linear-gradient(rgba(26, 26, 26, 0) 73.9%, rgb(26, 26, 26) 94.1%);pointer-events:none}
+.cn244{width:1500px;height:120px;display:block;position:absolute;bottom:0px;z-index:var(--z-003);padding-right:var(--space-005);padding-left:var(--space-005)}
+.cn245{height:100%;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;z-index:var(--z-002);padding-bottom:var(--space-005);align-items:flex-end}
+.cn246{height:64px;display:flex;flex-direction:column;row-gap:var(--space-002);column-gap:var(--space-002);color:var(--background)}
+.cn247{height:32px;overflow-x:hidden;overflow-y:hidden;font-size:var(--font-size-007);font-weight:var(--font-weight-002);line-height:32px;-webkit-line-clamp:2;display:block}
+.cn248{height:24px;display:block;color:var(--color-003)}
+.cn249{height:24px;overflow-x:hidden;overflow-y:hidden;white-space:nowrap;-webkit-line-clamp:2;display:block}
+.cn250{display:none}
+.cn251{display:none}
+.cn252{display:none}
+.cn253{display:none}
+.cn254{display:none}
+.cn255{display:none}
+.cn256{display:none}
+.cn257{display:none}
+.cn258{display:none}
+.cn259{display:none}
+.cn260{display:none}
+.cn261{display:none}
+.cn262{display:none}
+.cn263{display:none}
+.cn264{display:none}
+.cn265{display:none}
+.cn266{display:none}
+.cn267{display:none}
+.cn268{display:none}
+.cn269{display:none}
+.cn270{display:none}
+.cn271{display:none}
+.cn272{display:none}
+.cn273{display:none}
+.cn274{display:none}
+.cn275{display:none}
+.cn276{display:none}
+.cn277{display:none}
+.cn278{display:none}
+.cn279{display:none}
+.cn280{display:none}
+.cn281{display:none}
+.cn282{display:none}
+.cn283{display:none}
+.cn284{display:none}
+.cn285{display:none}
+.cn286{display:none}
+.cn287{display:none}
+.cn288{display:none}
+.cn289{display:none}
+.cn290{display:none}
+.cn291{display:none}
+.cn292{display:none}
+.cn293{display:none}
+.cn294{width:1632px;height:18px;display:flex;position:absolute;bottom:-25px;z-index:var(--z-001);justify-content:center;align-items:center;color:var(--color-001);text-align:center;list-style-type:none;list-style-position:outside}
+.cn295{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn296{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn297{width:16px;height:8px;display:block;border-top-left-radius:var(--radius-001);border-top-right-radius:var(--radius-001);border-bottom-right-radius:var(--radius-001);border-bottom-left-radius:var(--radius-001);background-color:var(--color-001)}
+.cn298{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn299{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn300{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn301{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn302{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn303{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn304{width:18px;height:18px;display:flex;position:relative;top:0px;right:0px;bottom:0px;left:0px;opacity:0.32;margin-right:5px;margin-left:5px;justify-content:center;align-items:center;cursor:pointer}
+.cn305{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cn306{width:8px;height:8px;display:block;border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);background-color:var(--color-001)}
+.cn307{width:40px;height:40px;display:flex;position:absolute;top:357.453px;right:-24px;z-index:var(--z-001);min-width:0px;margin-top:-20px;padding-top:var(--space-002);padding-right:var(--space-002);padding-bottom:var(--space-002);padding-left:var(--space-002);border-top-left-radius:var(--radius-004);border-top-right-radius:var(--radius-004);border-bottom-right-radius:var(--radius-004);border-bottom-left-radius:var(--radius-004);justify-content:center;align-items:center;flex-shrink:0;vertical-align:middle;color:var(--background);font-family:var(--font-001);font-size:var(--font-size-007);line-height:var(--line-height-002);letter-spacing:normal;text-align:center;background-color:rgba(33, 33, 33, 0.48);cursor:pointer}
+.cn308{width:24px;height:24px;display:block;flex-shrink:0;overflow-x:hidden;overflow-y:hidden}
+.cn309{display:none}
+.cn310{display:none}
+.cn311{display:none}
+.cn312{display:none}
+.cn313{display:none}
+.cn314{display:none}
+.cn315{display:none}
+.cn316{display:none}
+.cn317{display:none}
+.cn318{display:none}
+.cn319{display:none}
+.cn320{display:none}
+.cn321{display:none}
+}
+
+</style>
+</head>
+<body class="cn0" data-cid="n0">
+    <div class="cn1" data-cid="n1">
+      <a class="cn2" data-cid="n2" href="#main-content">
+        Skip to main content
+      </a>
+      <a class="cn3" data-cid="n3" href="#main-nav">
+        Skip to main nav
+      </a>
+      <header class="cn4" data-cid="n4">
+        <div class="cn5" data-cid="n5">
+          <div class="cn6" data-cid="n6">
+            <button class="cn7" data-cid="n7" aria-label="menu" type="button">
+              <svg class="cn8" data-cid="n8" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="MenuIcon" fill="currentColor"><path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path></svg>
+            </button>
+            <a class="cn9" data-cid="n9" href="https://www.elevationchurch.org/">
+              <img class="cn10" data-cid="n10" alt="Elevation Church" height="32" src="public/assets/cloned/images/fe1b0393750c.png" srcset="public/assets/cloned/images/0024c4d65166.png 1x, public/assets/cloned/images/fe1b0393750c.png 2x" width="128" />
+              <img class="cn11" data-cid="n11" alt="Elevation Church" height="32" src="public/assets/cloned/svg/691bf17c5cda.svg" srcset="public/assets/cloned/svg/39f34aff3f12.svg 1x, public/assets/cloned/svg/691bf17c5cda.svg 2x" width="32" />
+            </a>
+          </div>
+          <div class="cn12" data-cid="n12">
+            <div class="cn13" data-cid="n13">
+              <div class="cn14" data-cid="n14">
+                <div class="cn15" data-cid="n15">
+                  <div class="cn16" data-cid="n16">
+                    <span class="cn17" data-cid="n17" aria-hidden="true">
+                      ​
+                    </span>
+                    <svg class="cn18" data-cid="n18" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="SearchIcon" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg>
+                  </div>
+                  <input class="cn19" data-cid="n19" aria-label="Search" id="header-input-search" placeholder="Search" type="search" value="" />
+                </div>
+                <button class="cn20" data-cid="n20" type="button">
+                  <svg class="cn21" data-cid="n21" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="SearchIcon" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg>
+                </button>
+                <div class="cn22" data-cid="n22" aria-label="Open search" role="button"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cn23" data-cid="n23">
+            <a class="cn24" data-cid="n24" href="https://www.elevationchurch.org/giving" id="ec-nav-central-nav-bar-give">
+              <p class="cn25" data-cid="n25">
+                Give
+              </p>
+            </a>
+            <a class="cn26" data-cid="n26" href="https://www.elevationchurch.org/egroups" id="ec-nav-central-nav-bar-groups">
+              <p class="cn27" data-cid="n27">
+                Groups
+              </p>
+            </a>
+            <a class="cn28" data-cid="n28" href="https://www.elevationchurch.org/eteams" id="ec-nav-central-nav-bar-serve">
+              <p class="cn29" data-cid="n29">
+                Serve
+              </p>
+            </a>
+            <a class="cn30" data-cid="n30" href="https://www.elevationchurch.org/events" id="ec-nav-central-nav-bar-serve">
+              <p class="cn31" data-cid="n31">
+                Events
+              </p>
+            </a>
+            <a class="cn32" data-cid="n32" href="https://www.elevationchurch.org/about" id="ec-nav-central-nav-bar-about">
+              <p class="cn33" data-cid="n33">
+                About
+              </p>
+            </a>
+            <div class="cn34" data-cid="n34">
+              <button class="cn35" data-cid="n35" aria-label="Login to your account" type="button">
+                <div class="cn36" data-cid="n36">
+                  <svg class="cn37" data-cid="n37" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="PersonIcon" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="cn38" data-cid="n38">
+            <button class="cn39" data-cid="n39" aria-label="Login to your account" type="button">
+              <div class="cn40" data-cid="n40">
+                <svg class="cn41" data-cid="n41" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="PersonIcon" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="cn42" data-cid="n42">
+      <div class="cn43" data-cid="n43"></div>
+    </div>
+    <main class="cn44" data-cid="n44" id="main-content">
+      <div class="cn45" data-cid="n45">
+        <div class="cn46" data-cid="n46">
+          <nav class="cn47" data-cid="n47">
+            <div class="cn48" data-cid="n48"></div>
+            <div class="cn49" data-cid="n49">
+              <div class="cn50" data-cid="n50">
+                <div class="cn51" data-cid="n51">
+                  <div class="cn52" data-cid="n52">
+                    <a class="cn53" data-cid="n53" href="https://www.elevationchurch.org/sermons" id="ec-mobile-central-sub-nav-sermons">
+                      <div class="cn54" data-cid="n54" aria-label="Sermons" type="button">
+                        <svg class="cn55" data-cid="n55" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="PlayCircleOutlineIcon" fill="currentColor"><path d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"></path></svg>
+                      </div>
+                      <span class="cn56" data-cid="n56">
+                        Sermons
+                      </span>
+                    </a>
+                  </div>
+                  <div class="cn57" data-cid="n57">
+                    <a class="cn58" data-cid="n58" href="https://www.elevationchurch.org/streaming" id="ec-mobile-online-sub-nav-streaming">
+                      <div class="cn59" data-cid="n59" aria-label="Streaming" type="button">
+                        <svg class="cn60" data-cid="n60" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="SensorsIcon" fill="currentColor"><path d="M7.76 16.24C6.67 15.16 6 13.66 6 12s.67-3.16 1.76-4.24l1.42 1.42C8.45 9.9 8 10.9 8 12s.45 2.1 1.17 2.83zm8.48 0C17.33 15.16 18 13.66 18 12s-.67-3.16-1.76-4.24l-1.42 1.42C15.55 9.9 16 10.9 16 12s-.45 2.1-1.17 2.83zM12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m8 2c0 2.21-.9 4.21-2.35 5.65l1.42 1.42C20.88 17.26 22 14.76 22 12s-1.12-5.26-2.93-7.07l-1.42 1.42C19.1 7.79 20 9.79 20 12M6.35 6.35 4.93 4.93C3.12 6.74 2 9.24 2 12s1.12 5.26 2.93 7.07l1.42-1.42C4.9 16.21 4 14.21 4 12s.9-4.21 2.35-5.65"></path></svg>
+                      </div>
+                      <span class="cn61" data-cid="n61">
+                        Streaming
+                      </span>
+                    </a>
+                  </div>
+                  <div class="cn62" data-cid="n62">
+                    <a class="cn63" data-cid="n63" href="https://www.elevationchurch.org/locations" id="ec-mobile-central-sub-nav-locations">
+                      <div class="cn64" data-cid="n64" aria-label="Locations" type="button">
+                        <svg class="cn65" data-cid="n65" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="PinDropOutlinedIcon" fill="currentColor"><path d="M12 4c1.93 0 5 1.4 5 5.15 0 2.16-1.72 4.67-5 7.32-3.28-2.65-5-5.17-5-7.32C7 5.4 10.07 4 12 4m0-2C8.73 2 5 4.46 5 9.15c0 3.12 2.33 6.41 7 9.85 4.67-3.44 7-6.73 7-9.85C19 4.46 15.27 2 12 2"></path><path d="M12 7c-1.1 0-2 .9-2 2s.9 2 2 2a2 2 0 1 0 0-4M5 20h14v2H5z"></path></svg>
+                      </div>
+                      <span class="cn66" data-cid="n66">
+                        Locations
+                      </span>
+                    </a>
+                  </div>
+                  <div class="cn67" data-cid="n67">
+                    <a class="cn68" data-cid="n68" href="https://www.elevationchurch.org/giving" id="ec-mobile-giving-sub-nav-giving">
+                      <div class="cn69" data-cid="n69" aria-label="Giving" type="button">
+                        <svg class="cn70" data-cid="n70" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="VolunteerActivismOutlinedIcon" fill="currentColor"><path d="M16 13c3.09-2.81 6-5.44 6-7.7C22 3.45 20.55 2 18.7 2c-1.04 0-2.05.49-2.7 1.25C15.34 2.49 14.34 2 13.3 2 11.45 2 10 3.45 10 5.3c0 2.26 2.91 4.89 6 7.7m-2.7-9c.44 0 .89.21 1.18.55L16 6.34l1.52-1.79c.29-.34.74-.55 1.18-.55.74 0 1.3.56 1.3 1.3 0 1.12-2.04 3.17-4 4.99-1.96-1.82-4-3.88-4-4.99 0-.74.56-1.3 1.3-1.3M19 16h-2c0-1.2-.75-2.28-1.87-2.7L8.97 11H1v11h6v-1.44l7 1.94 8-2.5v-1c0-1.66-1.34-3-3-3M3 20v-7h2v7zm10.97.41L7 18.48V13h1.61l5.82 2.17c.34.13.57.46.57.83 0 0-1.99-.05-2.3-.15l-2.38-.79-.63 1.9 2.38.79c.51.17 1.04.26 1.58.26H19c.39 0 .74.23.9.56z"></path></svg>
+                      </div>
+                      <span class="cn71" data-cid="n71">
+                        Giving
+                      </span>
+                    </a>
+                  </div>
+                  <div class="cn72" data-cid="n72">
+                    <a class="cn73" data-cid="n73" href="https://www.elevationchurch.org/egroups" id="ec-mobile-egroups-sub-nav-groups">
+                      <div class="cn74" data-cid="n74" aria-label="Groups" type="button">
+                        <svg class="cn75" data-cid="n75" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="GroupsOutlinedIcon" fill="currentColor"><path d="M4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58C.48 14.9 0 15.62 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29M20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m4 3.43c0-.81-.48-1.53-1.22-1.85-.85-.37-1.79-.58-2.78-.58-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24zm-7.76-2.78c-1.17-.52-2.61-.9-4.24-.9s-3.07.39-4.24.9C6.68 14.13 6 15.21 6 16.39V18h12v-1.61c0-1.18-.68-2.26-1.76-2.74M8.07 16c.09-.23.13-.39.91-.69.97-.38 1.99-.56 3.02-.56s2.05.18 3.02.56c.77.3.81.46.91.69zM12 8c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m0-2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+                      </div>
+                      <span class="cn76" data-cid="n76">
+                        Groups
+                      </span>
+                    </a>
+                  </div>
+                  <div class="cn77" data-cid="n77">
+                    <a class="cn78" data-cid="n78" href="https://www.elevationchurch.org/events" id="ec-mobile-egroups-sub-nav-events">
+                      <span class="cn79" data-cid="n79">
+                        Events
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="cn80" data-cid="n80">
+        <div class="cn81" data-cid="n81">
+          <div class="cn82" data-cid="n82">
+            <div class="cn83" data-cid="n83">
+              <div class="cn84" data-cid="n84" dir="ltr">
+                <div class="cn85" data-cid="n85">
+                  <div class="cn86" data-cid="n86">
+                    <div class="cn87" data-cid="n87" aria-hidden="false">
+                      <div class="cn88" data-cid="n88">
+                        <div class="cn89" data-cid="n89">
+                          <div class="cn90" data-cid="n90">
+                            <div class="cn91" data-cid="n91">
+                              <div class="cn92" data-cid="n92">
+                                <div class="cn93" data-cid="n93">
+                                  <div class="cn94" data-cid="n94">
+                                    <div class="cn95" data-cid="n95">
+                                      <video class="cn96" data-cid="n96" playsinline preload="none"></video>
+                                      <div class="cn97" data-cid="n97">
+                                        <div class="cn98" data-cid="n98" aria-label="Play video" role="button">
+                                          <div class="cn99" data-cid="n99">
+                                            <img class="cn100" data-cid="n100" alt="Welcome to Elevation Church poster" sizes="100vw" src="public/assets/cloned/images/da11f2a928bf.jpeg" srcset="public/assets/cloned/images/617ccb62f017.jpeg 640w, public/assets/cloned/images/98bb5a599825.jpeg 750w, public/assets/cloned/images/7e5fd1777473.jpeg 828w, public/assets/cloned/images/c10bba55b865.jpeg 1080w, public/assets/cloned/images/ddd15872c8b2.jpeg 1200w, public/assets/cloned/images/3c752040e4ac.jpeg 1920w, public/assets/cloned/images/432b199e4594.jpeg 2048w, public/assets/cloned/images/da11f2a928bf.jpeg 3840w" />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cn101" data-cid="n101"></div>
+                                  <div class="cn102" data-cid="n102">
+                                    <div class="cn103" data-cid="n103">
+                                      <div class="cn104" data-cid="n104">
+                                        <h1 class="cn105" data-cid="n105">
+                                          Welcome to Elevation Church
+                                        </h1>
+                                        <p class="cn106" data-cid="n106">
+                                          See what God can do through you.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="cn107" data-cid="n107">
+                                      <div class="cn108" data-cid="n108">
+                                        <a class="cn109" data-cid="n109" href="https://www.elevationchurch.org/connect" id="ec-home-central-header-get-connected" target="_self">
+                                          Get connected
+                                        </a>
+                                        <a class="cn110" data-cid="n110" href="https://www.elevationchurch.org/about" id="ec-home-central-header-learn-more" target="_self">
+                                          Learn more
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="cn111" data-cid="n111">
+                                  <div class="cn112" data-cid="n112">
+                                    <div class="cn113" data-cid="n113">
+                                      <a class="cn114" data-cid="n114" href="https://www.elevationchurch.org/connect" id="ec-home-central-header-get-connected" target="_self">
+                                        Get connected
+                                      </a>
+                                      <a class="cn115" data-cid="n115" href="https://www.elevationchurch.org/about" id="ec-home-central-header-learn-more" target="_self">
+                                        Learn more
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cn116" data-cid="n116" aria-hidden="true">
+                      <div class="cn117" data-cid="n117">
+                        <div class="cn118" data-cid="n118">
+                          <div class="cn119" data-cid="n119">
+                            <div class="cn120" data-cid="n120">
+                              <div class="cn121" data-cid="n121">
+                                <div class="cn122" data-cid="n122">
+                                  <div class="cn123" data-cid="n123">
+                                    <div class="cn124" data-cid="n124">
+                                      <div class="cn125" data-cid="n125">
+                                        <div class="cn126" data-cid="n126" aria-label="Play video" role="button">
+                                          <div class="cn127" data-cid="n127">
+                                            <img class="cn128" data-cid="n128" alt="You’re Worth It (Lisa Harper)" sizes="100vw" src="public/assets/cloned/images/61cba602a300.jpg" srcset="public/assets/cloned/images/f957f10cd106.jpg 640w, public/assets/cloned/images/951e3f1dbd99.jpg 750w, public/assets/cloned/images/77473b12c40a.jpg 828w, public/assets/cloned/images/e076ca3e055e.jpg 1080w, public/assets/cloned/images/d18f0cee5db6.jpg 1200w, public/assets/cloned/images/ca2776bf6f7c.jpg 1920w, public/assets/cloned/images/6611aa03754c.jpg 2048w, public/assets/cloned/images/61cba602a300.jpg 3840w" />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cn129" data-cid="n129"></div>
+                                </div>
+                                <div class="cn130" data-cid="n130"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="cn131" data-cid="n131">
+                  <li class="cn132" data-cid="n132">
+                    <div class="cn133" data-cid="n133">
+                      <span class="cn134" data-cid="n134"></span>
+                    </div>
+                  </li>
+                  <li class="cn135" data-cid="n135">
+                    <div class="cn136" data-cid="n136">
+                      <span class="cn137" data-cid="n137"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="cn138" data-cid="n138" aria-label="Next" type="button">
+              <svg class="cn139" data-cid="n139" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ArrowForwardIosIcon" fill="currentColor"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cn140" data-cid="n140">
+          <div class="cn141" data-cid="n141">
+            <div class="cn142" data-cid="n142">
+              <h2 class="cn143" data-cid="n143">
+                Find the right experience for you.
+              </h2>
+              <p class="cn144" data-cid="n144">
+                <span class="cn145" data-cid="n145">
+                  No matter where you are, online or in person, become a part of all God is doing.
+                </span>
+              </p>
+            </div>
+            <div class="cn146" data-cid="n146">
+              <div class="cn147" data-cid="n147">
+                <svg class="cn148" data-cid="n148" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="CorporateFareIcon" fill="currentColor"><path d="M12 7V3H2v18h20V7zm-2 12H4v-2h6zm0-4H4v-2h6zm0-4H4V9h6zm0-4H4V5h6zm10 12h-8V9h8zm-2-8h-4v2h4zm0 4h-4v2h4z"></path></svg>
+                <span class="cn149" data-cid="n149">
+                  <h3 class="cn150" data-cid="n150">
+                    Physical Campus
+                  </h3>
+                </span>
+                <p class="cn151" data-cid="n151">
+                  Worship with us in person at one of our physical campuses.
+                </p>
+                <a class="cn152" data-cid="n152" href="https://www.elevationchurch.org/locations" id="ec-home-central-find-experience-find-a-location" target="_self">
+                  Find a location
+                  <span class="cn153" data-cid="n153">
+                    <svg class="cn154" data-cid="n154" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                  </span>
+                </a>
+              </div>
+              <div class="cn155" data-cid="n155">
+                <hr class="cn156" data-cid="n156" />
+                <div class="cn157" data-cid="n157" aria-orientation="vertical" role="separator"></div>
+              </div>
+              <div class="cn158" data-cid="n158">
+                <svg class="cn159" data-cid="n159" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="OndemandVideoIcon" fill="currentColor"><path d="M21 3H3c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.11-.9-2-2-2m0 14H3V5h18zm-5-6-7 4V7z"></path></svg>
+                <span class="cn160" data-cid="n160">
+                  <h3 class="cn161" data-cid="n161">
+                    Live Streams
+                  </h3>
+                </span>
+                <p class="cn162" data-cid="n162">
+                  eFam is our online community who stream church from wherever they are.
+                </p>
+                <a class="cn163" data-cid="n163" href="https://www.elevationchurch.org/streaming" id="ec-home-central-find-experience-find-a-time" target="_self">
+                  Find a time
+                  <span class="cn164" data-cid="n164">
+                    <svg class="cn165" data-cid="n165" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                  </span>
+                </a>
+              </div>
+              <div class="cn166" data-cid="n166">
+                <hr class="cn167" data-cid="n167" />
+                <div class="cn168" data-cid="n168" aria-orientation="vertical" role="separator"></div>
+              </div>
+              <div class="cn169" data-cid="n169">
+                <svg class="cn170" data-cid="n170" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="GroupsIcon" fill="currentColor"><path d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73V18H6v-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.61-.91 4.24-.91M4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58C.48 14.9 0 15.62 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29M20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m4 3.43c0-.81-.48-1.53-1.22-1.85-.85-.37-1.79-.58-2.78-.58-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3"></path></svg>
+                <span class="cn171" data-cid="n171">
+                  <h3 class="cn172" data-cid="n172">
+                    Watch Party
+                  </h3>
+                </span>
+                <p class="cn173" data-cid="n173">
+                  Watch Parties are groups of eFam that stream the worship experience together.
+                </p>
+                <a class="cn174" data-cid="n174" href="https://www.elevationchurch.org/locations?meetingType=watch-party" id="ec-home-central-find-experience-find-a-watch-party" target="_self">
+                  Find a watch party
+                  <span class="cn175" data-cid="n175">
+                    <svg class="cn176" data-cid="n176" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                  </span>
+                </a>
+              </div>
+              <div class="cn177" data-cid="n177">
+                <hr class="cn178" data-cid="n178" />
+                <div class="cn179" data-cid="n179" aria-orientation="vertical" role="separator"></div>
+              </div>
+              <div class="cn180" data-cid="n180">
+                <svg class="cn181" data-cid="n181" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="TravelExploreIcon" fill="currentColor"><path d="M19.3 16.9c.4-.7.7-1.5.7-2.4 0-2.5-2-4.5-4.5-4.5S11 12 11 14.5s2 4.5 4.5 4.5c.9 0 1.7-.3 2.4-.7l3.2 3.2 1.4-1.4zm-3.8.1c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5M12 20v2C6.48 22 2 17.52 2 12S6.48 2 12 2c4.84 0 8.87 3.44 9.8 8h-2.07c-.64-2.46-2.4-4.47-4.73-5.41V5c0 1.1-.9 2-2 2h-2v2c0 .55-.45 1-1 1H8v2h2v3H9l-4.79-4.79C4.08 10.79 4 11.38 4 12c0 4.41 3.59 8 8 8"></path></svg>
+                <span class="cn182" data-cid="n182">
+                  <h3 class="cn183" data-cid="n183">
+                    Pop-Up
+                  </h3>
+                </span>
+                <p class="cn184" data-cid="n184">
+                  A Pop-Up is where we bring church to different cities across the nation.
+                </p>
+                <a class="cn185" data-cid="n185" href="https://www.elevationchurch.org/pop-ups" id="ec-home-central-find-experience-find-a-pop-up" target="_self">
+                  Find a pop-up
+                  <span class="cn186" data-cid="n186">
+                    <svg class="cn187" data-cid="n187" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="cn188" data-cid="n188">
+              <a class="cn189" data-cid="n189" href="https://www.elevationchurch.org/locations" target="_self">
+                View locations
+                <span class="cn190" data-cid="n190">
+                  <svg class="cn191" data-cid="n191" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cn192" data-cid="n192">
+          <div class="cn193" data-cid="n193">
+            <div class="cn194" data-cid="n194">
+              <div class="cn195" data-cid="n195">
+                <h2 class="cn196" data-cid="n196">
+                  Discover more ways to connect
+                </h2>
+                <p class="cn197" data-cid="n197">
+                  <span class="cn198" data-cid="n198">
+                    There are always new ways to participate in what God is doing through our church, including events, tours, worship music, and so much more.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="cn199" data-cid="n199">
+              <div class="cn200" data-cid="n200" dir="ltr">
+                <button class="cn201" data-cid="n201" aria-label="Previous" type="button">
+                  <svg class="cn202" data-cid="n202" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ArrowForwardIosIcon" fill="currentColor"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+                </button>
+                <div class="cn203" data-cid="n203">
+                  <div class="cn204" data-cid="n204">
+                    <div class="cn205" data-cid="n205" aria-hidden="true">
+                      <div class="cn206" data-cid="n206" aria-hidden="true">
+                        <div class="cn207" data-cid="n207">
+                          <a class="cn208" data-cid="n208" href="https://www.elevationworship.com/tour" rel="noopener noreferrer" target="_blank">
+                            <article class="cn209" data-cid="n209">
+                              <div class="cn210" data-cid="n210">
+                                <picture class="cn211" data-cid="n211">
+                                  <source class="cn212" data-cid="n212" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/df1a54767f6e.jpg 600w, public/assets/cloned/images/f0e0c0026549.jpg 1200w, public/assets/cloned/images/ee450f88559d.jpg 1800w, public/assets/cloned/images/6aad4fe2f5f0.jpg 2400w" type="image/webp" />
+                                  <source class="cn213" data-cid="n213" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/8c78b0c42ab6.jpg 600w, public/assets/cloned/images/46f0254a97b3.jpg 1200w, public/assets/cloned/images/192a31ca3ac5.jpg 1800w, public/assets/cloned/images/abf1a06a089b.jpg 2400w" />
+                                  <img class="cn214" data-cid="n214" alt="" src="public/assets/cloned/images/abf1a06a089b.jpg" />
+                                </picture>
+                              </div>
+                              <div class="cn215" data-cid="n215"></div>
+                              <div class="cn216" data-cid="n216">
+                                <div class="cn217" data-cid="n217"></div>
+                              </div>
+                            </article>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="cn218" data-cid="n218" aria-hidden="false">
+                        <div class="cn219" data-cid="n219">
+                          <a class="cn220" data-cid="n220" href="https://www.elevationchurch.org/events/outreach?category=Love%2520Week" target="_self">
+                            <article class="cn221" data-cid="n221">
+                              <div class="cn222" data-cid="n222">
+                                <picture class="cn223" data-cid="n223">
+                                  <source class="cn224" data-cid="n224" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/11f988a730fa.jpeg 600w, public/assets/cloned/images/91323b7b3589.jpeg 1200w, public/assets/cloned/images/53c38f334c55.jpeg 1800w, public/assets/cloned/images/247fdc919a22.jpeg 2400w" type="image/webp" />
+                                  <source class="cn225" data-cid="n225" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/ffa08a1c41b1.jpeg 600w, public/assets/cloned/images/36e86437a3e5.jpeg 1200w, public/assets/cloned/images/1ea3a84e7956.jpeg 1800w, public/assets/cloned/images/b9c7b83014db.jpeg 2400w" />
+                                  <img class="cn226" data-cid="n226" alt="" src="public/assets/cloned/images/b9c7b83014db.jpeg" />
+                                </picture>
+                              </div>
+                              <div class="cn227" data-cid="n227"></div>
+                              <div class="cn228" data-cid="n228">
+                                <div class="cn229" data-cid="n229">
+                                  <div class="cn230" data-cid="n230">
+                                    <h3 class="cn231" data-cid="n231">
+                                      Events Are Live
+                                    </h3>
+                                    <p class="cn232" data-cid="n232">
+                                      <span class="cn233" data-cid="n233">
+                                        Sign up to serve
+                                      </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </article>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="cn234" data-cid="n234" aria-hidden="true">
+                        <div class="cn235" data-cid="n235">
+                          <a class="cn236" data-cid="n236" href="https://elevationworship.link/WYITRAlbumSA" rel="noopener noreferrer" target="_blank">
+                            <article class="cn237" data-cid="n237">
+                              <div class="cn238" data-cid="n238">
+                                <picture class="cn239" data-cid="n239">
+                                  <source class="cn240" data-cid="n240" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/3cd0584e93a2.jpg 600w, public/assets/cloned/images/ee62a15d2683.jpg 1200w, public/assets/cloned/images/b357acd623fc.jpg 1800w, public/assets/cloned/images/3c1238911399.jpg 2400w" type="image/webp" />
+                                  <source class="cn241" data-cid="n241" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/f6740aa63b25.jpg 600w, public/assets/cloned/images/739ccf408bb1.jpg 1200w, public/assets/cloned/images/89303bd6fa3c.jpg 1800w, public/assets/cloned/images/6775add6a373.jpg 2400w" />
+                                  <img class="cn242" data-cid="n242" alt="" src="public/assets/cloned/images/6775add6a373.jpg" />
+                                </picture>
+                              </div>
+                              <div class="cn243" data-cid="n243"></div>
+                              <div class="cn244" data-cid="n244">
+                                <div class="cn245" data-cid="n245">
+                                  <div class="cn246" data-cid="n246">
+                                    <h3 class="cn247" data-cid="n247">
+                                      When You're In The Room
+                                    </h3>
+                                    <p class="cn248" data-cid="n248">
+                                      <span class="cn249" data-cid="n249">
+                                        Tap to listen to Tiffany Hudson's new album
+                                      </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </article>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cn250" data-cid="n250" aria-hidden="true">
+                      <div class="cn251" data-cid="n251">
+                        <a class="cn252" data-cid="n252" href="https://www.elevationchurch.org/events/outreach?category=Love%2520Week" target="_self">
+                          <article class="cn253" data-cid="n253">
+                            <div class="cn254" data-cid="n254">
+                              <picture class="cn255" data-cid="n255">
+                                <source class="cn256" data-cid="n256" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/11f988a730fa.jpeg 600w, public/assets/cloned/images/91323b7b3589.jpeg 1200w, public/assets/cloned/images/53c38f334c55.jpeg 1800w, public/assets/cloned/images/247fdc919a22.jpeg 2400w" type="image/webp" />
+                                <source class="cn257" data-cid="n257" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/ffa08a1c41b1.jpeg 600w, public/assets/cloned/images/36e86437a3e5.jpeg 1200w, public/assets/cloned/images/1ea3a84e7956.jpeg 1800w, public/assets/cloned/images/b9c7b83014db.jpeg 2400w" />
+                                <img class="cn258" data-cid="n258" alt="" src="public/assets/cloned/images/b9c7b83014db.jpeg" />
+                              </picture>
+                            </div>
+                            <div class="cn259" data-cid="n259"></div>
+                            <div class="cn260" data-cid="n260">
+                              <div class="cn261" data-cid="n261"></div>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="cn262" data-cid="n262" aria-hidden="false">
+                      <div class="cn263" data-cid="n263">
+                        <a class="cn264" data-cid="n264" href="https://elevationworship.link/WYITRAlbumSA" rel="noopener noreferrer" target="_blank">
+                          <article class="cn265" data-cid="n265">
+                            <div class="cn266" data-cid="n266">
+                              <picture class="cn267" data-cid="n267">
+                                <source class="cn268" data-cid="n268" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/3cd0584e93a2.jpg 600w, public/assets/cloned/images/ee62a15d2683.jpg 1200w, public/assets/cloned/images/b357acd623fc.jpg 1800w, public/assets/cloned/images/3c1238911399.jpg 2400w" type="image/webp" />
+                                <source class="cn269" data-cid="n269" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/f6740aa63b25.jpg 600w, public/assets/cloned/images/739ccf408bb1.jpg 1200w, public/assets/cloned/images/89303bd6fa3c.jpg 1800w, public/assets/cloned/images/6775add6a373.jpg 2400w" />
+                                <img class="cn270" data-cid="n270" alt="" src="public/assets/cloned/images/6775add6a373.jpg" />
+                              </picture>
+                            </div>
+                            <div class="cn271" data-cid="n271"></div>
+                            <div class="cn272" data-cid="n272">
+                              <div class="cn273" data-cid="n273">
+                                <div class="cn274" data-cid="n274">
+                                  <h3 class="cn275" data-cid="n275">
+                                    When You're In The Room
+                                  </h3>
+                                  <p class="cn276" data-cid="n276">
+                                    <span class="cn277" data-cid="n277">
+                                      Tap to listen to Tiffany Hudson's new album
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="cn278" data-cid="n278" aria-hidden="true">
+                      <div class="cn279" data-cid="n279">
+                        <a class="cn280" data-cid="n280" href="https://www.bible.com/organizations/35234868-284b-4c58-b6c2-7bd7d11b4a98" rel="noopener noreferrer" target="_blank">
+                          <article class="cn281" data-cid="n281">
+                            <div class="cn282" data-cid="n282">
+                              <picture class="cn283" data-cid="n283">
+                                <source class="cn284" data-cid="n284" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/de82b616cde6.jpg 600w, public/assets/cloned/images/f3b962f798f1.jpg 1200w, public/assets/cloned/images/b58360199d47.jpg 1800w, public/assets/cloned/images/46b375a2d9be.jpg 2400w" type="image/webp" />
+                                <source class="cn285" data-cid="n285" sizes="(max-width: 2400px) 100vw, 2400px" srcset="public/assets/cloned/images/3c0809fec1ae.jpg 600w, public/assets/cloned/images/d7c5a33aa3e1.jpg 1200w, public/assets/cloned/images/edc3a2f4486d.jpg 1800w, public/assets/cloned/images/4184fb740327.jpg 2400w" />
+                                <img class="cn286" data-cid="n286" alt="" src="public/assets/cloned/images/4184fb740327.jpg" />
+                              </picture>
+                            </div>
+                            <div class="cn287" data-cid="n287"></div>
+                            <div class="cn288" data-cid="n288">
+                              <div class="cn289" data-cid="n289">
+                                <div class="cn290" data-cid="n290">
+                                  <h3 class="cn291" data-cid="n291">
+                                    Looking For Biblical Resources?
+                                  </h3>
+                                  <p class="cn292" data-cid="n292">
+                                    <span class="cn293" data-cid="n293">
+                                      Tap to see our devotionals
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="cn294" data-cid="n294">
+                    <li class="cn295" data-cid="n295">
+                      <div class="cn296" data-cid="n296">
+                        <span class="cn297" data-cid="n297"></span>
+                      </div>
+                    </li>
+                    <li class="cn298" data-cid="n298">
+                      <div class="cn299" data-cid="n299">
+                        <span class="cn300" data-cid="n300"></span>
+                      </div>
+                    </li>
+                    <li class="cn301" data-cid="n301">
+                      <div class="cn302" data-cid="n302">
+                        <span class="cn303" data-cid="n303"></span>
+                      </div>
+                    </li>
+                    <li class="cn304" data-cid="n304">
+                      <div class="cn305" data-cid="n305">
+                        <span class="cn306" data-cid="n306"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="cn307" data-cid="n307" aria-label="Next" type="button">
+                  <svg class="cn308" data-cid="n308" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ArrowForwardIosIcon" fill="currentColor"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+                </button>
+                <ul class="cn309" data-cid="n309">
+                  <li class="cn310" data-cid="n310">
+                    <div class="cn311" data-cid="n311">
+                      <span class="cn312" data-cid="n312"></span>
+                    </div>
+                  </li>
+                  <li class="cn313" data-cid="n313">
+                    <div class="cn314" data-cid="n314">
+                      <span class="cn315" data-cid="n315"></span>
+                    </div>
+                  </li>
+                  <li class="cn316" data-cid="n316">
+                    <div class="cn317" data-cid="n317">
+                      <span class="cn318" data-cid="n318"></span>
+                    </div>
+                  </li>
+                  <li class="cn319" data-cid="n319">
+                    <div class="cn320" data-cid="n320">
+                      <span class="cn321" data-cid="n321"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cn322" data-cid="n322">
+          <div class="cn323" data-cid="n323">
+            <div class="cn324" data-cid="n324">
+              <h2 class="cn325" data-cid="n325">
+                A place for you and your family
+              </h2>
+              <p class="cn326" data-cid="n326">
+                <span class="cn327" data-cid="n327">
+                  Join small groups, get involved in outreach, and discover ways for your whole family to grow in their faith.
+                </span>
+              </p>
+            </div>
+            <div class="cn328" data-cid="n328">
+              <div class="cn329" data-cid="n329">
+                <div class="cn330" data-cid="n330">
+                  <div class="cn331" data-cid="n331">
+                    <img class="cn332" data-cid="n332" alt="eGroup Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/55dc492edb28.jpeg" srcset="public/assets/cloned/images/10e634bdc007.jpeg 16w, public/assets/cloned/images/e78c7908b6f9.jpeg 32w, public/assets/cloned/images/43284c51eb54.jpeg 48w, public/assets/cloned/images/1d6c400690c4.jpeg 64w, public/assets/cloned/images/96b17b2f1c58.jpeg 96w, public/assets/cloned/images/bc5429f6a5ab.jpeg 128w, public/assets/cloned/images/74d6a8050103.jpeg 256w, public/assets/cloned/images/123dbc2013c5.jpeg 384w, public/assets/cloned/images/add31a923e97.jpeg 640w, public/assets/cloned/images/44061e10331e.jpeg 750w, public/assets/cloned/images/aa29013e94d1.jpeg 828w, public/assets/cloned/images/d7056344747e.jpeg 1080w, public/assets/cloned/images/113384ee0ec7.jpeg 1200w, public/assets/cloned/images/d61698bad5c9.jpeg 1920w, public/assets/cloned/images/e3b47c860c28.jpeg 2048w, public/assets/cloned/images/55dc492edb28.jpeg 3840w" />
+                    <div class="cn333" data-cid="n333">
+                      <h3 class="cn334" data-cid="n334">
+                        Connecting people. Activating faith.
+                      </h3>
+                      <p class="cn335" data-cid="n335">
+                        <span class="cn336" data-cid="n336">
+                          eGroup Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn337" data-cid="n337" href="https://www.elevationchurch.org/egroups/about" target="_self">
+                      Learn more
+                      <span class="cn338" data-cid="n338">
+                        <svg class="cn339" data-cid="n339" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn340" data-cid="n340">
+                <div class="cn341" data-cid="n341">
+                  <div class="cn342" data-cid="n342">
+                    <img class="cn343" data-cid="n343" alt="Outreach Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/361ef444795f.jpeg" srcset="public/assets/cloned/images/0e3d06a9f1b7.jpeg 16w, public/assets/cloned/images/143614555a0b.jpeg 32w, public/assets/cloned/images/af54004c27ce.jpeg 48w, public/assets/cloned/images/7b52b58f5700.jpeg 64w, public/assets/cloned/images/cf75fa197b53.jpeg 96w, public/assets/cloned/images/accc0f76a2fb.jpeg 128w, public/assets/cloned/images/dac8969e3665.jpeg 256w, public/assets/cloned/images/08201a9c6a52.jpeg 384w, public/assets/cloned/images/40a782daf76c.jpeg 640w, public/assets/cloned/images/96a6a9580eae.jpeg 750w, public/assets/cloned/images/90046d3613f3.jpeg 828w, public/assets/cloned/images/7a2d9768097e.jpeg 1080w, public/assets/cloned/images/01993532b5db.jpeg 1200w, public/assets/cloned/images/1725f6dc5516.jpeg 1920w, public/assets/cloned/images/70710a62671e.jpeg 2048w, public/assets/cloned/images/361ef444795f.jpeg 3840w" />
+                    <div class="cn344" data-cid="n344">
+                      <h3 class="cn345" data-cid="n345">
+                        Making an impact – locally and globally.
+                      </h3>
+                      <p class="cn346" data-cid="n346">
+                        <span class="cn347" data-cid="n347">
+                          Outreach Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn348" data-cid="n348" href="https://www.elevationchurch.org/outreach" target="_self">
+                      Learn more
+                      <span class="cn349" data-cid="n349">
+                        <svg class="cn350" data-cid="n350" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn351" data-cid="n351">
+                <div class="cn352" data-cid="n352">
+                  <div class="cn353" data-cid="n353">
+                    <img class="cn354" data-cid="n354" alt="Children’s Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/317dfce28d48.jpeg" srcset="public/assets/cloned/images/1d940621b215.jpeg 16w, public/assets/cloned/images/87df945543ed.jpeg 32w, public/assets/cloned/images/1ed5fb9fde72.jpeg 48w, public/assets/cloned/images/4bed551c7a9e.jpeg 64w, public/assets/cloned/images/042995369f18.jpeg 96w, public/assets/cloned/images/8d7639b36d84.jpeg 128w, public/assets/cloned/images/f56970acdf34.jpeg 256w, public/assets/cloned/images/3da4508f4464.jpeg 384w, public/assets/cloned/images/a8f39f4bcbc4.jpeg 640w, public/assets/cloned/images/ad3199006e85.jpeg 750w, public/assets/cloned/images/5c0bad3ac7f7.jpeg 828w, public/assets/cloned/images/33761622de85.jpeg 1080w, public/assets/cloned/images/c8f19c2405d4.jpeg 1200w, public/assets/cloned/images/bd2126d86a4f.jpeg 1920w, public/assets/cloned/images/0c4c709f4b98.jpeg 2048w, public/assets/cloned/images/317dfce28d48.jpeg 3840w" />
+                    <div class="cn355" data-cid="n355">
+                      <h3 class="cn356" data-cid="n356">
+                        Partnering with parents to develop kids’ faith.
+                      </h3>
+                      <p class="cn357" data-cid="n357">
+                        <span class="cn358" data-cid="n358">
+                          Children’s Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn359" data-cid="n359" href="https://www.elevationchurch.org/ekidz" target="_self">
+                      Learn more
+                      <span class="cn360" data-cid="n360">
+                        <svg class="cn361" data-cid="n361" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn362" data-cid="n362">
+                <div class="cn363" data-cid="n363">
+                  <div class="cn364" data-cid="n364">
+                    <img class="cn365" data-cid="n365" alt="Youth Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/0087e771ceb5.jpeg" srcset="public/assets/cloned/images/f00a51cbeace.jpeg 16w, public/assets/cloned/images/f248a06d3c00.jpeg 32w, public/assets/cloned/images/a05a3beec29f.jpeg 48w, public/assets/cloned/images/b55fc39df2b1.jpeg 64w, public/assets/cloned/images/e4a8e6662d4c.jpeg 96w, public/assets/cloned/images/13b0ece55466.jpeg 128w, public/assets/cloned/images/aff9ca50caf4.jpeg 256w, public/assets/cloned/images/17f0ab786030.jpeg 384w, public/assets/cloned/images/7f028fc5dd60.jpeg 640w, public/assets/cloned/images/2d0359172f97.jpeg 750w, public/assets/cloned/images/0a331ca4c39c.jpeg 828w, public/assets/cloned/images/75141159c7d2.jpeg 1080w, public/assets/cloned/images/980d5aff118f.jpeg 1200w, public/assets/cloned/images/ee8eabfb4658.jpeg 1920w, public/assets/cloned/images/2b4fd7804fd1.jpeg 2048w, public/assets/cloned/images/0087e771ceb5.jpeg 3840w" />
+                    <div class="cn366" data-cid="n366">
+                      <h3 class="cn367" data-cid="n367">
+                        Developing youth who influence culture.
+                      </h3>
+                      <p class="cn368" data-cid="n368">
+                        <span class="cn369" data-cid="n369">
+                          Youth Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn370" data-cid="n370" href="https://www.elevationchurch.org/youth" id="ec-home-yth-ministry-learn-more" target="_self">
+                      Learn more
+                      <span class="cn371" data-cid="n371">
+                        <svg class="cn372" data-cid="n372" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn373" data-cid="n373">
+                <div class="cn374" data-cid="n374">
+                  <div class="cn375" data-cid="n375">
+                    <img class="cn376" data-cid="n376" alt="Young Adult Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/4c902e2588bb.jpg" srcset="public/assets/cloned/images/81208dd37b7c.jpg 16w, public/assets/cloned/images/afa87810d1b8.jpg 32w, public/assets/cloned/images/d8356ff8d11b.jpg 48w, public/assets/cloned/images/7b608a37a3d6.jpg 64w, public/assets/cloned/images/9d4a6961f874.jpg 96w, public/assets/cloned/images/ca801106a190.jpg 128w, public/assets/cloned/images/6701c8059760.jpg 256w, public/assets/cloned/images/90f2a20aff7e.jpg 384w, public/assets/cloned/images/21d63d293624.jpg 640w, public/assets/cloned/images/bf361c44c021.jpg 750w, public/assets/cloned/images/8cfe6155c6f5.jpg 828w, public/assets/cloned/images/1e52220c96c9.jpg 1080w, public/assets/cloned/images/b0fc40676fed.jpg 1200w, public/assets/cloned/images/a181ca7c96a9.jpg 1920w, public/assets/cloned/images/374b1354d402.jpg 2048w, public/assets/cloned/images/4c902e2588bb.jpg 3840w" />
+                    <div class="cn377" data-cid="n377">
+                      <h3 class="cn378" data-cid="n378">
+                        Building community. Deepening faith.
+                      </h3>
+                      <p class="cn379" data-cid="n379">
+                        <span class="cn380" data-cid="n380">
+                          Young Adult Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn381" data-cid="n381" href="https://www.elevationchurch.org/young-adults" id="ec-home-Young Adults-ministry-learn-more" target="_self">
+                      Learn more
+                      <span class="cn382" data-cid="n382">
+                        <svg class="cn383" data-cid="n383" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cn384" data-cid="n384">
+                <div class="cn385" data-cid="n385">
+                  <div class="cn386" data-cid="n386">
+                    <div class="cn387" data-cid="n387">
+                      <div class="cn388" data-cid="n388">
+                        <img class="cn389" data-cid="n389" alt="Worship Ministry" sizes="(max-width: 900px) 425px, 564px" src="public/assets/cloned/images/0ace6a49afc3.png" srcset="public/assets/cloned/images/e9f0058995e7.png 16w, public/assets/cloned/images/f9ee00a3ab18.png 32w, public/assets/cloned/images/7a959951b435.png 48w, public/assets/cloned/images/49f8696d3cf7.png 64w, public/assets/cloned/images/87e8aa8c50f6.png 96w, public/assets/cloned/images/db9a4350b1fb.png 128w, public/assets/cloned/images/5cd14b54f384.png 256w, public/assets/cloned/images/1078c46fdddf.png 384w, public/assets/cloned/images/7179d2d8712b.png 640w, public/assets/cloned/images/493c6255faab.png 750w, public/assets/cloned/images/5edf9498a499.png 828w, public/assets/cloned/images/eb7e5c0d1d14.png 1080w, public/assets/cloned/images/d98e3096229c.png 1200w, public/assets/cloned/images/2eb6444e6028.png 1920w, public/assets/cloned/images/2400aa7107c6.png 2048w, public/assets/cloned/images/0ace6a49afc3.png 3840w" />
+                      </div>
+                    </div>
+                    <div class="cn390" data-cid="n390">
+                      <h3 class="cn391" data-cid="n391">
+                        Inspiring your faith and creating an atmosphere of worship to God.
+                      </h3>
+                      <p class="cn392" data-cid="n392">
+                        <span class="cn393" data-cid="n393">
+                          Worship Ministry
+                        </span>
+                      </p>
+                    </div>
+                    <a class="cn394" data-cid="n394" href="https://elevationworship.com/" id="ec-home-worship-ministry-learn-more" target="_blank">
+                      Learn more
+                      <span class="cn395" data-cid="n395">
+                        <svg class="cn396" data-cid="n396" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cn397" data-cid="n397">
+          <div class="cn398" data-cid="n398">
+            <div class="cn399" data-cid="n399">
+              <div class="cn400" data-cid="n400">
+                <h2 class="cn401" data-cid="n401">
+                  How To Get Involved
+                </h2>
+                <p class="cn402" data-cid="n402">
+                  <span class="cn403" data-cid="n403">
+                    See how God can use your gifts to make an eternal impact.
+                  </span>
+                </p>
+              </div>
+              <div class="cn404" data-cid="n404">
+                <div class="cn405" data-cid="n405">
+                  <img class="cn406" data-cid="n406" alt="" height="276" src="public/assets/cloned/images/937a2097ff8b.jpeg" srcset="public/assets/cloned/images/50ac04a62bec.jpeg 1x, public/assets/cloned/images/937a2097ff8b.jpeg 2x" width="368" />
+                  <div class="cn407" data-cid="n407">
+                    <h3 class="cn408" data-cid="n408">
+                      Volunteer
+                    </h3>
+                    <p class="cn409" data-cid="n409">
+                      Participate in the mission to advance the gospel by serving on a volunteer team.
+                    </p>
+                    <div class="cn410" data-cid="n410">
+                      <a class="cn411" data-cid="n411" href="https://www.elevationchurch.org/eteams">
+                        <div class="cn412" data-cid="n412" id="ec-home-volunteer-get-involved-volunteer-learn-more" type="button">
+                          Learn more
+                          <span class="cn413" data-cid="n413">
+                            <svg class="cn414" data-cid="n414" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cn415" data-cid="n415">
+                  <img class="cn416" data-cid="n416" alt="" height="276" src="public/assets/cloned/images/db62d67c9da7.jpeg" srcset="public/assets/cloned/images/7553c0b5304f.jpeg 1x, public/assets/cloned/images/db62d67c9da7.jpeg 2x" width="368" />
+                  <div class="cn417" data-cid="n417">
+                    <h3 class="cn418" data-cid="n418">
+                      Lead
+                    </h3>
+                    <p class="cn419" data-cid="n419">
+                      Lead an eGroup, host a Watch Party or become a student leader.
+                    </p>
+                    <div class="cn420" data-cid="n420">
+                      <a class="cn421" data-cid="n421" href="https://www.elevationchurch.org/lead">
+                        <div class="cn422" data-cid="n422" id="ec-home-central-get-involved-lead-learn-more" type="button">
+                          Learn more
+                          <span class="cn423" data-cid="n423">
+                            <svg class="cn424" data-cid="n424" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cn425" data-cid="n425">
+                  <img class="cn426" data-cid="n426" alt="" height="276" src="public/assets/cloned/images/91d355bbd2d9.jpeg" srcset="public/assets/cloned/images/dbf3e573e545.jpeg 1x, public/assets/cloned/images/91d355bbd2d9.jpeg 2x" width="368" />
+                  <div class="cn427" data-cid="n427">
+                    <h3 class="cn428" data-cid="n428">
+                      Jobs
+                    </h3>
+                    <p class="cn429" data-cid="n429">
+                      Explore job opportunities to use your gifts in a ministry setting.
+                    </p>
+                    <div class="cn430" data-cid="n430">
+                      <a class="cn431" data-cid="n431" href="https://www.elevationchurch.org/opportunities">
+                        <div class="cn432" data-cid="n432" id="ec-home-HR-get-involved-jobs-learn-more" type="button">
+                          Learn more
+                          <span class="cn433" data-cid="n433">
+                            <svg class="cn434" data-cid="n434" aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="ChevronRightIcon" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     
+</body>
+</html>
