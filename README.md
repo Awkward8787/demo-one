@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="Demo One" width="100%">
+  <img src="assets/banner.png" alt="Demo One" width="100%">
 </p>
 
 # Demo One
@@ -17,7 +17,7 @@ Source noted in the original README: cloned from https://www.elevationchurch.org
 
 - Next.js App Router pages and sections cloned for editing
 - Tailwind CSS
-- Local `npm run dev` / `build` / `start`
+- Local `npm run dev` / `build` / `start` (static `out/` export)
 
 ## Tech stack
 
@@ -26,11 +26,26 @@ Source noted in the original README: cloned from https://www.elevationchurch.org
 - TypeScript
 - Tailwind CSS
 
+## How it works
+
+```mermaid
+flowchart LR
+  ditto[Ditto clone capture] --> src[Next.js App Router pages]
+  src --> edit[Redesign / restyle in local]
+  edit --> build[next build → out/]
+  build --> preview[Static preview]
+```
+
+This repo is a practice clone: edit the captured pages, rebuild, and preview the static export. Do not ship as Elevation Church.
+
 ## How to run
 
 ```bash
 npm install
 npm run dev
+npm run build
+# serve the static export
+npx serve out
 ```
 
 ## Status
